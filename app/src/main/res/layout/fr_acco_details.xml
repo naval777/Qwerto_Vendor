@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <in.qwerto.qwertovendor.AccoDetail
+            android:id="@+id/adGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:detail_icon="@drawable/gender"
+            app:detailName="Gender"
+            app:isOpened="false"
+            app:opened_view="@layout/view_open_gender"
+            app:type="1"/>
+
+
+
+        <in.qwerto.qwertovendor.AccoDetail
+            android:id="@+id/adSecurity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:detail_icon="@drawable/security"
+            app:detailName="Security Deposit"
+            app:opened_view="@layout/view_open_security"
+            app:isOpened="false"
+            app:type="2"/>
+
+
+        <in.qwerto.qwertovendor.AccoDetail
+            android:id="@+id/adRoomDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:detailName="Room details"
+            app:opened_view="@layout/view_open_room_details"
+            app:detail_icon="@drawable/room_details"
+            app:isOpened="false"
+            app:type="3"/>
+
+
+        <in.qwerto.qwertovendor.AccoDetail
+            android:id="@+id/adMeals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:detail_icon="@drawable/meals"
+            app:detailName="Meals"
+            app:opened_view="@layout/view_open_gender"
+            app:isOpened="false"
+            app:type="4"/>
+
+
+        <in.qwerto.qwertovendor.AccoDetail
+            android:id="@+id/adAmenities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:detailName="Amenities"
+            app:detail_icon="@drawable/amenities"
+            app:opened_view="@layout/view_open_amenity"
+            app:isOpened="false"
+            app:type="5"/>
+
+
+        <in.qwerto.qwertovendor.AccoDetail
+            android:id="@+id/adRestrictions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:detail_icon="@drawable/restriction"
+            app:detailName="Restrictions"
+            app:opened_view="@layout/view_open_restriction"
+            app:isOpened="false"
+            app:type="6"/>
+    </LinearLayout>
+</ScrollView>
+

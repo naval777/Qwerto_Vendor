@@ -1,0 +1,136 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CreateProduct"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivProductImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add" />
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/llTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@+id/ivCheckTitle">
+            <TextView
+                android:id="@+id/tvProductTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Title"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tvTitleHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click to add a title to your product"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/ivCheckTitle"
+            android:src="@drawable/check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/llCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@+id/ivCheckCategory">
+            <TextView
+                android:id="@+id/tvProductCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Category"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tvCategoryHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click to add your product's category"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/ivCheckCategory"
+            android:src="@drawable/check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_toLeftOf="@+id/ivCheckDescription"
+            android:id="@+id/llDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvProductDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tvDescriptionHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click to add description to your product"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/ivCheckDescription"
+            android:src="@drawable/check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_toLeftOf="@+id/ivCheckPrice"
+            android:id="@+id/llPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvProductPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textSize="20dp"
+                android:inputType="number"/>
+            <TextView
+                android:id="@+id/tvPriceHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click to set a price to your product"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/ivCheckPrice"
+            android:src="@drawable/check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

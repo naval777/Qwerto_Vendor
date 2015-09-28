@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@android:color/black"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:id="@+id/tvTitle"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/llMobileBox"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="48dp"
+        android:weightSum="10"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/pick_number"
+        android:padding="10dp">
+        <ImageView
+            android:layout_weight="9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/mobile"/>
+        <EditText
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="Enter mobile number"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/llMobileBox"
+        android:id="@+id/tvProceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proceed"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:background="@drawable/button"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="10dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:elevation="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="we will send a one time password(OTP) to the mobile number entered by for verification"
+        android:gravity="center"
+        android:layout_below="@+id/tvProceed"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="By creating an Account, I agree to Qwerto terms of service and privacy policy"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"/>
+
+</RelativeLayout>

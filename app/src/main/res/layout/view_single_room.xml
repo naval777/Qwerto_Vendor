@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/border_allsides_black"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvRoomShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 sharing room"
+            android:textSize="25dp"/>
+
+        <ImageView
+            android:id="@+id/ivDeleteRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_delete"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/ivEditRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_edit"
+            android:layout_toLeftOf="@+id/ivDeleteRoom"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:src="@drawable/rupee"/>
+
+        <TextView
+            android:id="@+id/tvRoomRent"
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cost: Rs.750 per month"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:src="@drawable/room_details"/>
+
+        <TextView
+            android:id="@+id/tvRoomNos"
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No. of rooms: 5"/>
+
+     </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ac"/>
+
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A/C"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:src="@drawable/shower"/>
+
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attached bathroom"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:src="@drawable/tv"/>
+
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TV"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:src="@drawable/eb"/>
+
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EB separate"/>
+
+    </LinearLayout>
+</LinearLayout>

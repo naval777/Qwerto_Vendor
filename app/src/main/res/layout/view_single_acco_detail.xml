@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llAccoDetailTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/single_border_bottom"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:weightSum="7">
+
+        <ImageView
+            android:id="@+id/ivAccoDetailIcon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="2"
+            android:src="@drawable/gender" />
+
+        <TextView
+            android:id="@+id/tvAccoDetailName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="5"
+            android:text="Gender"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/ivAccoDetailOpen"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:src="@drawable/up_arrow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/llAccoDetailOpen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </LinearLayout>
+
+</LinearLayout>

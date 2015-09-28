@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llGenderEx"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/single_border_bottom"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:visibility="visible"
+    android:weightSum="8"
+    android:clickable="false">
+
+    <LinearLayout
+        android:id="@+id/llMale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4">
+
+    <RadioButton
+        android:clickable="false"
+        android:button="@drawable/selector_radio"
+        android:id="@+id/rbMale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text="Male" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llFemale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4">
+
+    <RadioButton
+        android:clickable="false"
+        android:button="@drawable/selector_radio"
+        android:id="@+id/rbFemale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text="Female" />
+    </LinearLayout>
+
+</LinearLayout>

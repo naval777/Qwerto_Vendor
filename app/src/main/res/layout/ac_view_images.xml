@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@android:color/black"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="8">
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/tvGoBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_weight="4"
+                android:id="@+id/tvTitle"
+                android:gravity="center"
+                android:text="2 sharing"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="Edit"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp" />
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_above="@+id/tvAddPhotos"
+        android:id="@+id/rvImages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"/>
+
+        <TextView
+            android:id="@+id/tvAddPhotos"
+            android:text="Add Photos"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:background="@color/qwerto"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

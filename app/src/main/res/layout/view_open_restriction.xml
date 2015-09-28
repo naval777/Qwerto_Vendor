@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false">
+    <in.qwerto.qwertovendor.Amenity
+        android:id="@+id/aSmoking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:image="@drawable/smoking"
+        app:amenity_name="Smoking allowed"/>
+
+    <in.qwerto.qwertovendor.Amenity
+        android:id="@+id/aDrinking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:image="@drawable/drinking"
+        app:amenity_name="Drinking allowed"/>
+
+    <in.qwerto.qwertovendor.Amenity
+        android:id="@+id/aMaleVisitor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:image="@drawable/male_visitor"
+        app:amenity_name="Visitors allowed"/>
+
+    <in.qwerto.qwertovendor.Amenity
+        android:id="@+id/aFemaleVisitor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:image="@drawable/female_visitor"
+        app:amenity_name="Female visitors"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time restriction"
+        android:textSize="20dp"
+        android:layout_marginLeft="15dp"/>
+    <TimePicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TimePicker>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Other restrictions:"
+        android:textSize="20dp"
+        android:layout_marginLeft="15dp"/>
+
+
+    <EditText
+        android:id="@+id/etOtherRestriciton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/border_allsides_black"
+        android:minLines="4"
+        android:padding="5dp"
+        android:textSize="20dp" />
+
+</LinearLayout>
