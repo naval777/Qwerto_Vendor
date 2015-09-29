@@ -1,11 +1,13 @@
-package in.qwerto.qwertovendor;
+package in.qwerto.qwertovendor.Views;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
-import android.widget.TextView;
+
+import in.qwerto.qwertovendor.R;
+import in.qwerto.qwertovendor.Views.Amenity;
 
 /**
  * Created by sandeep on 17/9/15.

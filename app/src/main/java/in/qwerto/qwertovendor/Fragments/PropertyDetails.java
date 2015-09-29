@@ -1,14 +1,15 @@
-package in.qwerto.qwertovendor;
+package in.qwerto.qwertovendor.Fragments;
 
 import android.app.Fragment;
 import android.app.FragmentTransaction;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import android.widget.TextView;
+
+import in.qwerto.qwertovendor.Fragments.AccomodationDetails;
+import in.qwerto.qwertovendor.R;
 
 /**
  * Created by sandeep on 18/9/15.

@@ -1,4 +1,4 @@
-package in.qwerto.qwertovendor;
+package in.qwerto.qwertovendor.Views;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import in.qwerto.qwertovendor.R;
 
 /**
  * Created by sandeep on 26/9/15.

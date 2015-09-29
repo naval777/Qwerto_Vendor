@@ -12,7 +12,7 @@
         android:orientation="vertical">
 
 
-        <in.qwerto.qwertovendor.AccoDetail
+        <in.qwerto.qwertovendor.Views.AccoDetail
             android:id="@+id/adGender"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
 
 
 
-        <in.qwerto.qwertovendor.AccoDetail
+        <in.qwerto.qwertovendor.Views.AccoDetail
             android:id="@+id/adSecurity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
             app:type="2"/>
 
 
-        <in.qwerto.qwertovendor.AccoDetail
+        <in.qwerto.qwertovendor.Views.AccoDetail
             android:id="@+id/adRoomDetails"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
             app:type="3"/>
 
 
-        <in.qwerto.qwertovendor.AccoDetail
+        <in.qwerto.qwertovendor.Views.AccoDetail
             android:id="@+id/adMeals"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -57,7 +57,7 @@
             app:type="4"/>
 
 
-        <in.qwerto.qwertovendor.AccoDetail
+        <in.qwerto.qwertovendor.Views.AccoDetail
             android:id="@+id/adAmenities"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -68,7 +68,7 @@
             app:type="5"/>
 
 
-        <in.qwerto.qwertovendor.AccoDetail
+        <in.qwerto.qwertovendor.Views.AccoDetail
             android:id="@+id/adRestrictions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

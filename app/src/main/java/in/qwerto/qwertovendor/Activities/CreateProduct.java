@@ -1,4 +1,4 @@
-package in.qwerto.qwertovendor;
+package in.qwerto.qwertovendor.Activities;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
@@ -9,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import in.qwerto.qwertovendor.R;
+import in.qwerto.qwertovendor.SetText;
 
 
 public class CreateProduct extends ActionBarActivity implements View.OnClickListener {

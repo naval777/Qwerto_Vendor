@@ -1,4 +1,4 @@
-package in.qwerto.qwertovendor;
+package in.qwerto.qwertovendor.Views;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -18,6 +18,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+
+import in.qwerto.qwertovendor.R;
 
 /**
  * Created by sandeep on 17/9/15.

@@ -40,56 +40,56 @@
             android:layout_height="wrap_content"/>
     </RelativeLayout>
 
-    <in.qwerto.qwertovendor.Amenity
+    <in.qwerto.qwertovendor.Views.Amenity
         android:id="@+id/aHouseKeeping"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:amenity_name="Housekeeping"
         app:image="@drawable/house_keeping"/>
 
-    <in.qwerto.qwertovendor.Amenity
+    <in.qwerto.qwertovendor.Views.Amenity
         android:id="@+id/aLaundry"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:amenity_name="Laundry"
         app:image="@drawable/laundry"/>
 
-    <in.qwerto.qwertovendor.Amenity
+    <in.qwerto.qwertovendor.Views.Amenity
         android:id="@+id/aGym"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:amenity_name="Gym"
         app:image="@drawable/gym"/>
 
-    <in.qwerto.qwertovendor.Amenity
+    <in.qwerto.qwertovendor.Views.Amenity
         android:id="@+id/aNewspaper"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:amenity_name="Newspaper"
         app:image="@drawable/parking"/>
 
-    <in.qwerto.qwertovendor.Amenity
+    <in.qwerto.qwertovendor.Views.Amenity
         android:id="@+id/aWaterPurifier"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:amenity_name="Water Purifier"
         app:image="@drawable/water_purifier"/>
 
-    <in.qwerto.qwertovendor.Amenity
+    <in.qwerto.qwertovendor.Views.Amenity
         android:id="@+id/aWashingMachine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:amenity_name="Washing Machine"
         app:image="@drawable/washing_machine"/>
 
-    <in.qwerto.qwertovendor.Amenity
+    <in.qwerto.qwertovendor.Views.Amenity
         android:id="@+id/aCCTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:amenity_name="CCTV"
         app:image="@drawable/cctv"/>
 
-    <in.qwerto.qwertovendor.Amenity
+    <in.qwerto.qwertovendor.Views.Amenity
         android:id="@+id/aTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -97,21 +97,21 @@
         app:yes="true"
         app:image="@drawable/tv"/>
 
-    <in.qwerto.qwertovendor.Amenity
+    <in.qwerto.qwertovendor.Views.Amenity
         android:id="@+id/aCookingAllowed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:amenity_name="Cooking allowed"
         app:image="@drawable/cooking_allowed"/>
 
-    <in.qwerto.qwertovendor.Amenity
+    <in.qwerto.qwertovendor.Views.Amenity
         android:id="@+id/aWifi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:amenity_name="Wifi"
         app:image="@drawable/wifi"/>
 
-    <in.qwerto.qwertovendor.Amenity
+    <in.qwerto.qwertovendor.Views.Amenity
         android:id="@+id/aParking"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -119,7 +119,7 @@
         app:image="@drawable/parking"/>
 
 
-    <in.qwerto.qwertovendor.Amenity
+    <in.qwerto.qwertovendor.Views.Amenity
         android:id="@+id/aFridge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -127,7 +127,7 @@
         app:image="@drawable/fridge"/>
 
 
-    <in.qwerto.qwertovendor.Amenity
+    <in.qwerto.qwertovendor.Views.Amenity
         android:id="@+id/aSecurity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -135,21 +135,21 @@
         app:image="@drawable/security"/>
 
 
-    <in.qwerto.qwertovendor.Amenity
+    <in.qwerto.qwertovendor.Views.Amenity
         android:id="@+id/aMicrowave"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:amenity_name="Microwave"
         app:image="@drawable/microwave"/>
 
-    <in.qwerto.qwertovendor.Amenity
+    <in.qwerto.qwertovendor.Views.Amenity
         android:id="@+id/aGeyser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:amenity_name="Geyser"
         app:image="@drawable/geyser"/>
 
-    <in.qwerto.qwertovendor.Amenity
+    <in.qwerto.qwertovendor.Views.Amenity
         android:id="@+id/aDiningtable"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

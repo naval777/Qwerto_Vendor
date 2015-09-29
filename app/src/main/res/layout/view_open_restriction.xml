@@ -5,28 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clickable="false">
-    <in.qwerto.qwertovendor.Amenity
+    <in.qwerto.qwertovendor.Views.Amenity
         android:id="@+id/aSmoking"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:image="@drawable/smoking"
         app:amenity_name="Smoking allowed"/>
 
-    <in.qwerto.qwertovendor.Amenity
+    <in.qwerto.qwertovendor.Views.Amenity
         android:id="@+id/aDrinking"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:image="@drawable/drinking"
         app:amenity_name="Drinking allowed"/>
 
-    <in.qwerto.qwertovendor.Amenity
+    <in.qwerto.qwertovendor.Views.Amenity
         android:id="@+id/aMaleVisitor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:image="@drawable/male_visitor"
         app:amenity_name="Visitors allowed"/>
 
-    <in.qwerto.qwertovendor.Amenity
+    <in.qwerto.qwertovendor.Views.Amenity
         android:id="@+id/aFemaleVisitor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

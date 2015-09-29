@@ -1,10 +1,13 @@
-package in.qwerto.qwertovendor;
+package in.qwerto.qwertovendor.Activities;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
+
+import in.qwerto.qwertovendor.Fragments.PropertyDetails;
+import in.qwerto.qwertovendor.R;
 
 /**
  * Created by sandeep on 18/9/15.

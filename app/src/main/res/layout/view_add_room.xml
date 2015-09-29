@@ -176,28 +176,28 @@
                 android:text="No" />
         </RelativeLayout>
 
-        <in.qwerto.qwertovendor.Amenity
+        <in.qwerto.qwertovendor.Views.Amenity
             android:id="@+id/amAttachedBathroom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:amenity_name="Attached bathroom"
             app:image="@drawable/shower" />
 
-        <in.qwerto.qwertovendor.Amenity
+        <in.qwerto.qwertovendor.Views.Amenity
             android:id="@+id/amTV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:amenity_name="TV"
             app:image="@drawable/tv" />
 
-        <in.qwerto.qwertovendor.Amenity
+        <in.qwerto.qwertovendor.Views.Amenity
             android:id="@+id/amAC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:amenity_name="AC"
             app:image="@drawable/ac" />
 
-        <in.qwerto.qwertovendor.Amenity
+        <in.qwerto.qwertovendor.Views.Amenity
             android:id="@+id/amEB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
