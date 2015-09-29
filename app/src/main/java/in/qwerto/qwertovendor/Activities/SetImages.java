@@ -32,10 +32,8 @@ public class SetImages extends ActionBarActivity implements View.OnClickListener
 
     RecyclerView images;
     ImageAdapter adapter;
-    ImageView camera, gallery;
     private final int TAKE_PIC = 1;
     private final int OPEN_GALLERY = 2;
-    StaggeredGridLayoutManager sglm;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -60,12 +58,6 @@ public class SetImages extends ActionBarActivity implements View.OnClickListener
             }
         });
         images.setLayoutManager(manager);
-
-        camera = (ImageView) findViewById(R.id.ivCamera);
-        gallery = (ImageView) findViewById(R.id.ivGallery);
-
-        camera.setOnClickListener(this);
-        gallery.setOnClickListener(this);
 
 
         ItemTouchHelper.Callback callback = new ItemTouchHelper.Callback() {
@@ -121,17 +113,17 @@ public class SetImages extends ActionBarActivity implements View.OnClickListener
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.ivCamera:
-                Intent intent = new Intent(
-                        android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(intent, TAKE_PIC);
-                break;
-            case R.id.ivGallery:
-                Intent photoPic = new Intent(
-                        Intent.ACTION_PICK,
-                        android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                startActivityForResult(photoPic, OPEN_GALLERY);
-                break;
+//            case R.id.ivCamera:
+//                Intent intent = new Intent(
+//                        android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+//                startActivityForResult(intent, TAKE_PIC);
+//                break;
+//            case R.id.ivGallery:
+//                Intent photoPic = new Intent(
+//                        Intent.ACTION_PICK,
+//                        android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+//                startActivityForResult(photoPic, OPEN_GALLERY);
+//                break;
         }
     }
 

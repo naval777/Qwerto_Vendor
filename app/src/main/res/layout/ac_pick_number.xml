@@ -40,7 +40,7 @@
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@null"
+            android:background="@drawable/sign_in_border"
             android:hint="Enter mobile number"
             android:gravity="center"/>
     </LinearLayout>

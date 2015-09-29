@@ -25,7 +25,7 @@ public class WelcomeMessage extends Activity {
         listProperty.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(WelcomeMessage.this,ListingProperty.class));
+                startActivity(new Intent(WelcomeMessage.this,PropertyType.class));
             }
         });
     }

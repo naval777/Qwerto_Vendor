@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
-import in.qwerto.qwertovendor.Fragments.AccomodationDetails;
 import in.qwerto.qwertovendor.R;
 
 /**
@@ -27,7 +26,7 @@ public class PropertyDetails extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fr_property_details, container, false);
+        View v = inflater.inflate(R.layout.fr_pg_property_details, container, false);
 
         next = (LinearLayout) getActivity().findViewById(R.id.tvNext);
 

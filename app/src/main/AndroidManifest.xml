@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:theme="@style/NoActionBar" >
         <activity
-            android:name=".Activities.ListingProperty"
+            android:name=".Activities.SplashScreen"
             android:label="@string/app_name"
             android:windowSoftInputMode="stateHidden|adjustPan">
             <intent-filter>
@@ -19,10 +19,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.SplashScreen"/>
+        <activity android:name=".Activities.ListingPG"/>
         <activity android:name=".Activities.PickNumber"/>
         <activity android:name=".Activities.CreateProfile"/>
         <activity android:name=".Activities.WelcomeMessage"/>
+        <activity android:name=".Activities.EditProperty"/>
+        <activity android:name=".Activities.MyProperties"/>
+        <activity android:name=".Activities.PropertyType"/>
+        <activity android:name=".Activities.PersonalInfo"/>
 
 
         <activity android:name=".SetText"

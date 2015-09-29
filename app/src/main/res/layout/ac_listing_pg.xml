@@ -21,12 +21,71 @@
 
     </android.support.v7.widget.Toolbar>
 
+    <RelativeLayout
+        android:id="@+id/llFlow"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/single_border_bottom">
+
+        <RadioButton
+            android:id="@+id/rbPropDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/selector_radio"/>
+        <View
+            android:id="@+id/vPropdets"
+            android:layout_toRightOf="@+id/rbPropDetails"
+            android:layout_centerVertical="true"
+            android:layout_width="70dp"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+
+        <RadioButton
+            android:id="@+id/rbAccoDetails"
+            android:layout_toRightOf="@+id/vPropdets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/selector_radio"/>
+        <View
+            android:id="@+id/vAccodets"
+            android:layout_toRightOf="@+id/rbAccoDetails"
+            android:layout_centerVertical="true"
+            android:layout_width="70dp"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <RadioButton
+            android:id="@+id/rbImages"
+            android:layout_toRightOf="@+id/vAccodets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/selector_radio"/>
+        <View
+            android:id="@+id/vImages"
+            android:layout_toRightOf="@+id/rbImages"
+            android:layout_centerVertical="true"
+            android:layout_width="70dp"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <RadioButton
+            android:id="@+id/rbVerifStatus"
+            android:layout_toRightOf="@+id/vImages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/selector_radio"/>
+
+    </RelativeLayout>
     <FrameLayout
         android:id="@+id/fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/tvNext"
-        android:layout_below="@+id/toolbar" />
+        android:layout_below="@+id/llFlow" />
 
     <LinearLayout
         android:id="@+id/tvNext"
@@ -41,6 +100,7 @@
         android:weightSum="2">
 
         <LinearLayout
+            android:visibility="gone"
             android:gravity="center"
             android:id="@+id/llBack"
             android:layout_weight="1"

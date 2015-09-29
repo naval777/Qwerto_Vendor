@@ -26,7 +26,7 @@ public class PropertyType extends Activity {
         pg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(PropertyType.this,PropertyDetails.class));
+                startActivity(new Intent(PropertyType.this,ListingPG.class));
             }
         });
 
