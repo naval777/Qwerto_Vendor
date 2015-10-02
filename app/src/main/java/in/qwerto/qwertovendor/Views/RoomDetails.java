@@ -49,8 +49,8 @@ public class RoomDetails extends LinearLayout {
                 //Show dialog here
                 AddRoomDialog dialog = new AddRoomDialog(c,0,0,0,false,false,false,false,layout.getChildCount(),2);
                 dialog.show();
-                SingleRoom sr = new SingleRoom(c,0,0,0,false,false,false,false,layout.getChildCount());
-                layout.addView(sr,layout.getChildCount());
+//                SingleRoom sr = new SingleRoom(c,0,0,0,false,false,false,false,layout.getChildCount());
+//                layout.addView(sr,layout.getChildCount());
             }
         });
     }
@@ -219,16 +219,16 @@ public class RoomDetails extends LinearLayout {
                     sharing=8;
                     break;
                 case R.id.tvDone:
-                    if(rentPM.getText().toString().length()==0||noOfRooms.getText().toString().length()==0){
+                    if(rentPM.getText().toString().length()==0||noOfRooms.getText().toString().length()==0||sharing==0){
                         Toast.makeText(context,"Invalid input",Toast.LENGTH_SHORT).show();
                     }else{
                         rent = Integer.parseInt(rentPM.getText().toString());
                         numRooms = Integer.parseInt(noOfRooms.getText().toString());
                         SingleRoom sr = new SingleRoom(context,sharing,rent,numRooms,ab.getChecked(),tv.getChecked(),ac.getChecked(),eb.getChecked(),position);
-                            layout.removeViewAt(position);
-                            layout.addView(sr);
+//                            layout.removeViewAt(position);
+                            layout.addView(sr,position);
                     }
-                    setLayoutPosition();
+//                    setLayoutPosition();
                     dismiss();
                     break;
                 case R.id.tvCancel:
@@ -267,6 +267,25 @@ public class RoomDetails extends LinearLayout {
             ImageView edit,delete;
             edit = (ImageView) view.findViewById(R.id.ivEditRoom);
             delete = (ImageView) view.findViewById(R.id.ivDeleteRoom);
+
+            LinearLayout AC,AB,TV,EB;
+            AC = (LinearLayout) view.findViewById(R.id.llAC);
+            AB = (LinearLayout) view.findViewById(R.id.llAB);
+            TV = (LinearLayout) view.findViewById(R.id.llTV);
+            EB = (LinearLayout) view.findViewById(R.id.llEB);
+
+            if(!ac){
+                AC.setAlpha((float) 0.3);
+            }
+            if(!ab){
+                AB.setAlpha((float) 0.3);
+            }
+            if(!tv){
+                TV.setAlpha((float) 0.3);
+            }
+            if(!eb){
+                EB.setAlpha((float) 0.3);
+            }
 
             share.setText(sharing+" Sharing room");
             rentAmount.setText("Cost: Rs."+rent+" per month");

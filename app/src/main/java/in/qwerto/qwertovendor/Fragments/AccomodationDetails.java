@@ -28,7 +28,7 @@ public class AccomodationDetails extends Fragment implements View.OnClickListene
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fr_acco_details, container, false);
+        View v = inflater.inflate(R.layout.fr_pg_acco_details, container, false);
 
 
         gender = (AccoDetail) v.findViewById(R.id.adGender);

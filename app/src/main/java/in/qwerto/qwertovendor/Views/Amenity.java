@@ -35,7 +35,7 @@ public class Amenity extends LinearLayout {
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.Amenity,0,0);
         String name = a.getString(R.styleable.Amenity_amenity_name);
         int image_id = a.getResourceId(R.styleable.Amenity_image, 0);
-        yesOrNo = a.getBoolean(R.styleable.Amenity_yes,true);
+//        yesOrNo = a.getBoolean(R.styleable.Amenity_yes,true);
 
 
 
@@ -51,14 +51,14 @@ public class Amenity extends LinearLayout {
 
         amenity.setText(name);
         icon.setImageResource(image_id);
-
-        if(yesOrNo){
-            yes.setChecked(true);
-            no.setChecked(false);
-        }else{
-            yes.setChecked(false);
-            no.setChecked(true);
-        }
+//
+//        if(yesOrNo){
+//            yes.setChecked(true);
+//            no.setChecked(false);
+//        }else{
+//            yes.setChecked(false);
+//            no.setChecked(true);
+//        }
 
         yes.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override

@@ -16,124 +16,161 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2 sharing room"
-            android:textSize="25dp"/>
+            android:textSize="25dp" />
 
         <ImageView
             android:id="@+id/ivDeleteRoom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@android:drawable/ic_menu_delete"
             android:layout_alignParentRight="true"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="10dp"
+            android:src="@android:drawable/ic_menu_delete" />
 
         <ImageView
             android:id="@+id/ivEditRoom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@android:drawable/ic_menu_edit"
-            android:layout_toLeftOf="@+id/ivDeleteRoom"/>
+            android:layout_toLeftOf="@+id/ivDeleteRoom"
+            android:src="@android:drawable/ic_menu_edit" />
 
     </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="8"
+        android:layout_margin="10dp"
         android:orientation="horizontal"
-        android:layout_margin="10dp">
+        android:weightSum="8">
 
         <ImageView
-            android:layout_weight="1"
             android:layout_width="25dp"
             android:layout_height="20dp"
-            android:src="@drawable/rupee"/>
+            android:layout_weight="1"
+            android:src="@drawable/rupee" />
 
         <TextView
             android:id="@+id/tvRoomRent"
-            android:layout_weight="3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cost: Rs.750 per month"/>
+            android:layout_weight="3"
+            android:text="Cost: Rs.750 per month" />
 
         <ImageView
-            android:layout_weight="1"
             android:layout_width="25dp"
             android:layout_height="20dp"
-            android:src="@drawable/room_details"/>
+            android:layout_weight="1"
+            android:src="@drawable/room_details" />
 
         <TextView
             android:id="@+id/tvRoomNos"
-            android:layout_weight="3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="No. of rooms: 5"/>
+            android:layout_weight="3"
+            android:text="No. of rooms: 5" />
 
-     </LinearLayout>
+    </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="8"
+        android:layout_margin="10dp"
         android:orientation="horizontal"
-        android:layout_margin="10dp">
+        android:weightSum="8">
 
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="25dp"
-            android:layout_height="20dp"
-            android:src="@drawable/ac"/>
-
-        <TextView
-            android:layout_weight="3"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/llAC"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="A/C"/>
+            android:layout_weight="4"
+            android:weightSum="4">
 
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="25dp"
-            android:layout_height="20dp"
-            android:src="@drawable/shower"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/ac" />
 
-        <TextView
-            android:layout_weight="3"
-            android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="A/C" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llAB"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Attached bathroom"/>
+            android:layout_weight="4"
+            android:weightSum="4">
+
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/shower" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Attached bathroom" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="8"
+        android:layout_margin="10dp"
         android:orientation="horizontal"
-        android:layout_margin="10dp">
+        android:weightSum="8">
 
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="25dp"
-            android:layout_height="20dp"
-            android:src="@drawable/tv"/>
-
-        <TextView
-            android:layout_weight="3"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/llTV"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="TV"/>
+            android:layout_weight="4"
+            android:weightSum="4">
 
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="25dp"
-            android:layout_height="20dp"
-            android:src="@drawable/eb"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/tv" />
 
-        <TextView
-            android:layout_weight="3"
-            android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="TV" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llEB"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="EB separate"/>
+            android:layout_weight="4"
+            android:weightSum="4">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/eb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="EB separate" />
+        </LinearLayout>
+
 
     </LinearLayout>
 </LinearLayout>

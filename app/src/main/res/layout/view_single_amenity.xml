@@ -21,7 +21,6 @@
         android:text="Washing machine"/>
     <RadioButton
         android:button="@drawable/selector_radio"
-        android:checked="true"
         android:layout_toLeftOf="@+id/rbNo"
         android:id="@+id/rbYes"
         android:layout_weight="1"
