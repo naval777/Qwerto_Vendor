@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:weightSum="2">
+            <EditText
+                android:id="@+id/etRoomtype"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/single_border_bottom"
+                android:layout_margin="5dp"
+                android:hint="Room Type"/>
+
+            <EditText
+                android:id="@+id/etNoOfRooms"
+                android:hint="Total No of rooms"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/single_border_bottom"/>
+        </TableRow>
+
+
+        <TableRow
+            android:weightSum="2">
+            <EditText
+                android:id="@+id/etNoOfOccupants"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/single_border_bottom"
+                android:layout_margin="5dp"
+                android:hint="No of occupants"/>
+
+            <EditText
+                android:id="@+id/etFoodPlan"
+                android:hint="Food plan"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/single_border_bottom"/>
+        </TableRow>
+
+
+        <TableRow
+            android:weightSum="2">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rent/day(incl. of tax)"
+                android:layout_margin="5dp"/>
+
+            <EditText
+                android:id="@+id/etRent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/single_border_bottom"/>
+        </TableRow>
+
+
+        <TableRow
+            android:weightSum="2">
+            <EditText
+                android:id="@+id/etNoOfExtraBeds"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/single_border_bottom"
+                android:layout_margin="5dp"
+                android:hint="No of extra beds"/>
+
+            <EditText
+                android:id="@+id/etCostOfExtraBed"
+                android:hint="Cost of an extra bed"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/single_border_bottom"/>
+        </TableRow>
+
+
+        <TableRow>
+            <EditText
+                android:id="@+id/etRoomView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/single_border_bottom"
+                android:layout_margin="5dp"
+                android:hint="Room view"/>
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Includes"
+            android:textColor="@color/qwerto"
+            android:textSize="20dp"/>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/single_border_bottom"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/ivAmenityIcon"
+                android:layout_weight="1"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:id="@+id/tvAmenityName"
+                android:layout_toRightOf="@+id/ivAmenityIcon"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+            <TextView
+                android:layout_toLeftOf="@+id/rbNo"
+                android:id="@+id/rbYes"
+                android:text="Yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"/>
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/rbNo"
+                android:text="No"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amAttachedBathroom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:image="@drawable/shower"
+            app:amenity_name="Attached Bathroom"/>
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:image="@drawable/tv"
+            app:amenity_name="TV"/>
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amAC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:image="@drawable/ac"
+            app:amenity_name="A/C"/>
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amWaterHeater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:amenity_name="Water heater"
+            app:image="@drawable/parking"/>
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amRoomHeater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:image="@drawable/parking"
+            app:amenity_name="Room heater"/>
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amAttachedBalcony"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:image="@drawable/parking"
+            app:amenity_name="Attached Balcony"/>
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amFreeWifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:amenity_name="Free Wifi"
+            app:image="@drawable/wifi"/>
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amWardrobe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:image="@drawable/parking"
+            app:amenity_name="Wardrobe"/>
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amFridge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:image="@drawable/fridge"
+            app:amenity_name="Fridge"/>
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amComplimentarybf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:image="@drawable/breakfast"
+            app:amenity_name="Complimentary breakfast"/>
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amStudyLamps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:image="@drawable/parking"
+            app:amenity_name="Study Lamp"/>
+
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amTables"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:image="@drawable/parking"
+            app:amenity_name="Tables"/>
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amChairs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:image="@drawable/parking"
+            app:amenity_name="Chairs"/>
+
+        <LinearLayout
+            android:id="@+id/llAddAmenity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other Amenities"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

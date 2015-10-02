@@ -1,10 +1,11 @@
-package in.qwerto.qwertovendor.Views;
+package in.qwerto.qwertovendor.Views.Pg;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 
 import in.qwerto.qwertovendor.R;
+import in.qwerto.qwertovendor.Views.Amenity;
 
 /**
  * Created by sandeep on 17/9/15.
@@ -25,7 +26,7 @@ public class Amenities extends LinearLayout {
 
     private void initView() {
         LayoutInflater inflater = (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        inflater.inflate(R.layout.view_open_amenity, this, true);
+        inflater.inflate(R.layout.view_pg_open_amenity, this, true);
 
         houseKeeping = (Amenity) findViewById(R.id.aHouseKeeping);
         laundry = (Amenity) findViewById(R.id.aLaundry);

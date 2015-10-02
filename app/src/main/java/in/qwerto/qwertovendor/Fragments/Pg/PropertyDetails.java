@@ -1,4 +1,4 @@
-package in.qwerto.qwertovendor.Fragments;
+package in.qwerto.qwertovendor.Fragments.Pg;
 
 import android.app.Fragment;
 import android.app.FragmentTransaction;
@@ -28,19 +28,19 @@ public class PropertyDetails extends Fragment {
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fr_pg_property_details, container, false);
 
-        next = (LinearLayout) getActivity().findViewById(R.id.tvNext);
-
-        next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //getdata and move to next activity
-                AccomodationDetails frament = new AccomodationDetails();
-                FragmentTransaction trans=getFragmentManager().beginTransaction();
-                trans.replace(R.id.fragment, frament);
-                trans.addToBackStack(null);
-                trans.commit();
-            }
-        });
+//        next = (LinearLayout) getActivity().findViewById(R.id.tvNext);
+//
+//        next.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                //getdata and move to next activity
+//                AccomodationDetails frament = new AccomodationDetails();
+//                FragmentTransaction trans=getFragmentManager().beginTransaction();
+//                trans.replace(R.id.fragment, frament);
+//                trans.addToBackStack(null);
+//                trans.commit();
+//            }
+//        });
         return v;
     }
 }

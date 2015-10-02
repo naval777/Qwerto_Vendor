@@ -20,11 +20,13 @@
         android:weightSum="2">
 
         <LinearLayout
+            android:id="@+id/llCurrent"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <RadioButton
+                android:id="@+id/rbCurrent"
                 android:clickable="false"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -40,11 +42,13 @@
 
 
         <LinearLayout
+            android:id="@+id/llSavings"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <RadioButton
+                android:id="@+id/rbSavings"
                 android:clickable="false"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -72,6 +76,7 @@
                 android:text="Account holder name"/>
 
             <EditText
+                android:id="@+id/etACName"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -85,6 +90,7 @@
                 android:text="Account Number"/>
 
             <EditText
+                android:id="@+id/etACNumber"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -97,6 +103,7 @@
                 android:text="Bank name"/>
 
             <EditText
+                android:id="@+id/etBankName"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -109,6 +116,7 @@
                 android:text="Branch name"/>
 
             <EditText
+                android:id="@+id/etBranchName"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -121,6 +129,7 @@
                 android:text="IFSC code"/>
 
             <EditText
+                android:id="@+id/etIFSCCode"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

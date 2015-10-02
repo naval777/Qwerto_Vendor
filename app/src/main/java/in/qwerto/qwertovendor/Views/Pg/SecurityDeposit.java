@@ -1,4 +1,4 @@
-package in.qwerto.qwertovendor.Views;
+package in.qwerto.qwertovendor.Views.Pg;
 
 import android.content.Context;
 import android.view.LayoutInflater;

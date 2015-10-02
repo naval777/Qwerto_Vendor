@@ -1,48 +1,43 @@
-package in.qwerto.qwertovendor.Views;
+package in.qwerto.qwertovendor.Views.Apartment;
 
 import android.content.Context;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 
+import in.qwerto.qwertovendor.Activities.ListingPG;
 import in.qwerto.qwertovendor.R;
 import in.qwerto.qwertovendor.Views.Amenity;
 
 /**
- * Created by sandeep on 17/9/15.
+ * Created by sandeep on 3/10/15.
  */
 public class Restrictions extends LinearLayout {
 
-    Context c;
-    Amenity smoking, drinking, maleVs,femaleVs;
+    Amenity pet,smoking,drinking, gender, food, entry;
     EditText others;
-    boolean [] rules;
+
+    Context c;
 
     public Restrictions(Context context) {
         super(context);
         this.c = context;
-        rules = new boolean[4];
-        initView();
+        initview();
     }
 
-    private void initView() {
+    private void initview() {
         LayoutInflater inflater = (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view=inflater.inflate(R.layout.view_open_restriction, this, true);
+        inflater.inflate(R.layout.view_ap_open_restriction, this, true);
 
+        pet = (Amenity) findViewById(R.id.aPet);
         smoking = (Amenity) findViewById(R.id.aSmoking);
         drinking = (Amenity) findViewById(R.id.aDrinking);
-        maleVs = (Amenity) findViewById(R.id.aMaleVisitor);
-        femaleVs = (Amenity) findViewById(R.id.aFemaleVisitor);
+        gender = (Amenity) findViewById(R.id.aOtherGender);
+        food = (Amenity) findViewById(R.id.aFood);
+        entry = (Amenity) findViewById(R.id.aEntry);
 
         others = (EditText) findViewById(R.id.etOtherRestriciton);
-    }
 
-    public boolean [] getData(){
-        rules[0]=smoking.getChecked();
-        rules[1]=drinking.getChecked();
-        rules[2]=maleVs.getChecked();
-        rules[3]=femaleVs.getChecked();
-        return rules;
+
     }
 }

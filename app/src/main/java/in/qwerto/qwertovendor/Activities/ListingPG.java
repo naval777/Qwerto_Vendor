@@ -6,9 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
-import in.qwerto.qwertovendor.Fragments.AccomodationDetails;
-import in.qwerto.qwertovendor.Fragments.Images;
-import in.qwerto.qwertovendor.Fragments.PropertyDetails;
+import in.qwerto.qwertovendor.Fragments.Pg.AccomodationDetails;
+import in.qwerto.qwertovendor.Fragments.Pg.Images;
+import in.qwerto.qwertovendor.Fragments.Pg.PropertyDetails;
 import in.qwerto.qwertovendor.Fragments.VerificationStatus;
 import in.qwerto.qwertovendor.R;
 

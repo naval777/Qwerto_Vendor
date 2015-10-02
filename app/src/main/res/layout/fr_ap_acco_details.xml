@@ -13,14 +13,14 @@
 
 
         <in.qwerto.qwertovendor.Views.Pg.AccoDetail
-            android:id="@+id/adGender"
+            android:id="@+id/adTenants"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:detail_icon="@drawable/gender"
-            app:detailName="Gender"
+            app:detailName="Preferred tenants"
             app:isOpened="false"
-            app:opened_view="@layout/view_pg_open_gender"
-            app:type="1"/>
+            app:opened_view="@layout/view_ap_open_pref_tens"
+            app:type="7"/>
 
 
 
@@ -28,7 +28,7 @@
             android:id="@+id/adSecurity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:detail_icon="@drawable/security"
+            app:detail_icon="@drawable/refundable"
             app:detailName="Security Deposit"
             app:opened_view="@layout/view_open_security"
             app:isOpened="false"
@@ -36,36 +36,36 @@
 
 
         <in.qwerto.qwertovendor.Views.Pg.AccoDetail
-            android:id="@+id/adRoomDetails"
+            android:id="@+id/adRentDetails"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:detailName="Room details"
-            app:opened_view="@layout/view_pg_open_room_details"
+            app:detailName="Rent details"
+            app:opened_view="@layout/view_ap_open_rent_details"
             app:detail_icon="@drawable/room_details"
             app:isOpened="false"
-            app:type="3"/>
+            app:type="8"/>
 
 
         <in.qwerto.qwertovendor.Views.Pg.AccoDetail
-            android:id="@+id/adMeals"
+            android:id="@+id/adFlatAmenities"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:detail_icon="@drawable/meals"
-            app:detailName="Meals"
-            app:opened_view="@layout/view_pg_open_gender"
+            app:detailName="Flat amenities"
+            app:opened_view="@layout/view_ap_open_flat_amenities"
             app:isOpened="false"
-            app:type="4"/>
+            app:type="9"/>
 
 
         <in.qwerto.qwertovendor.Views.Pg.AccoDetail
-            android:id="@+id/adAmenities"
+            android:id="@+id/adSocietyAmenities"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:detailName="Amenities"
+            app:detailName="Society amenities"
             app:detail_icon="@drawable/amenities"
-            app:opened_view="@layout/view_pg_open_amenity"
+            app:opened_view="@layout/view_ap_open_soc_amenity"
             app:isOpened="false"
-            app:type="5"/>
+            app:type="10"/>
 
 
         <in.qwerto.qwertovendor.Views.Pg.AccoDetail
@@ -74,9 +74,9 @@
             android:layout_height="wrap_content"
             app:detail_icon="@drawable/restriction"
             app:detailName="Restrictions"
-            app:opened_view="@layout/view_pg_open_restriction"
+            app:opened_view="@layout/view_ap_open_restriction"
             app:isOpened="false"
-            app:type="6"/>
+            app:type="11"/>
     </LinearLayout>
 </ScrollView>
 

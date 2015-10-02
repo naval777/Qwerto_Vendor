@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/parking"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Would like to rent out my place to:"/>
+
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/ivAmenityIcon"
+            android:layout_weight="1"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/tvAmenityName"
+            android:layout_toRightOf="@+id/ivAmenityIcon"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+        <TextView
+            android:layout_toLeftOf="@+id/rbNo"
+            android:id="@+id/rbYes"
+            android:text="Yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"/>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/rbNo"
+            android:text="No"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <in.qwerto.qwertovendor.Views.Amenity
+        android:id="@+id/aHouseKeeping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:amenity_name="Single man"/>
+
+    <in.qwerto.qwertovendor.Views.Amenity
+        android:id="@+id/aLaundry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:amenity_name="Single Woman"/>
+
+    <in.qwerto.qwertovendor.Views.Amenity
+        android:id="@+id/aGym"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:amenity_name="Group of men"/>
+
+    <in.qwerto.qwertovendor.Views.Amenity
+        android:id="@+id/aNewspaper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:amenity_name="Group of Women"/>
+
+    <in.qwerto.qwertovendor.Views.Amenity
+        android:id="@+id/aWaterPurifier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:amenity_name="Married Couples"/>
+
+    <in.qwerto.qwertovendor.Views.Amenity
+        android:id="@+id/aWashingMachine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:amenity_name="Group of men and women"/>
+
+</LinearLayout>

@@ -1,4 +1,4 @@
-package in.qwerto.qwertovendor.Views;
+package in.qwerto.qwertovendor.Views.Pg;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -9,6 +9,10 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import in.qwerto.qwertovendor.R;
+import in.qwerto.qwertovendor.Views.Apartment.FlatAmenities;
+import in.qwerto.qwertovendor.Views.Apartment.RentDetails;
+import in.qwerto.qwertovendor.Views.Apartment.SelectTenants;
+import in.qwerto.qwertovendor.Views.Apartment.SocietyAmenities;
 
 /**
  * Created by sandeep on 17/9/15.
@@ -24,6 +28,11 @@ public class AccoDetail extends LinearLayout {
     Meals m;
     Amenities ame;
     Restrictions r;
+    SelectTenants st;
+    FlatAmenities fa;
+    SocietyAmenities sa;
+    RentDetails rentDetails;
+    in.qwerto.qwertovendor.Views.Apartment.Restrictions restrictions;
     LinearLayout accoDetail;
     ImageView open;
 
@@ -109,6 +118,26 @@ public class AccoDetail extends LinearLayout {
             case 6:
                 r = new Restrictions(context);
                 accoDetail.addView(r,0);
+                break;
+            case 7:
+                st = new SelectTenants(c);
+                accoDetail.addView(st,0);
+                break;
+            case 8:
+                rentDetails = new RentDetails(c);
+                accoDetail.addView(rentDetails,0);
+                break;
+            case 9:
+                fa = new FlatAmenities(c);
+                accoDetail.addView(fa,0);
+                break;
+            case 10:
+                sa = new SocietyAmenities(c);
+                accoDetail.addView(sa,0);
+                break;
+            case 11:
+                restrictions = new in.qwerto.qwertovendor.Views.Apartment.Restrictions(c);
+                accoDetail.addView(restrictions,0);
                 break;
         }
 

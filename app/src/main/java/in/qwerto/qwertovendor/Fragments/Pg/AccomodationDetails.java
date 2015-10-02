@@ -1,4 +1,4 @@
-package in.qwerto.qwertovendor.Fragments;
+package in.qwerto.qwertovendor.Fragments.Pg;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import in.qwerto.qwertovendor.R;
-import in.qwerto.qwertovendor.Views.AccoDetail;
+import in.qwerto.qwertovendor.Views.Pg.AccoDetail;
 
 /**
  * Created by sandeep on 18/9/15.

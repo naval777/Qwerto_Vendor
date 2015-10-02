@@ -1,4 +1,4 @@
-package in.qwerto.qwertovendor.Views;
+package in.qwerto.qwertovendor.Views.Pg;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -38,7 +38,7 @@ public class RoomDetails extends LinearLayout {
 
     private void initView() {
         inflater = (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view=inflater.inflate(R.layout.view_open_room_details, this, true);
+        View view=inflater.inflate(R.layout.view_pg_open_room_details, this, true);
 
         layout = (LinearLayout) view.findViewById(R.id.llRoomList);
         addRoom = (TextView) view.findViewById(R.id.tvAddRoomType);

@@ -1,4 +1,4 @@
-package in.qwerto.qwertovendor.Views;
+package in.qwerto.qwertovendor.Views.Pg;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -8,7 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -42,7 +41,7 @@ public class Meals extends LinearLayout implements View.OnClickListener {
 
     private void initView() {
         LayoutInflater inflater = (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view = inflater.inflate(R.layout.view_open_meals, this, true);
+        View view = inflater.inflate(R.layout.view_pg_open_meals, this, true);
 
         addMeal = (TextView) view.findViewById(R.id.tvAddMealPlan);
 

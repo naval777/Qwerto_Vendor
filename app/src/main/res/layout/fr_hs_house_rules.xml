@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:orientation="vertical">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/single_border_bottom">
+
+            <ImageView
+                android:id="@+id/ivAmenityIcon"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tvAmenityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/ivAmenityIcon"
+                android:layout_weight="5"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/rbYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/rbNo"
+                android:text="Yes" />
+
+            <TextView
+                android:id="@+id/rbNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="No" />
+        </RelativeLayout>
+
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/aDrinking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:amenity_name="Drinking allowed"
+            app:image="@drawable/drinking" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/single_border_bottom"
+            android:hint="Terms and conditions if any"
+            android:textSize="15dp" />
+
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/aSmoking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:amenity_name="Smoking allowed"
+            app:image="@drawable/smoking" />
+
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/aMaleVisitor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:amenity_name="Non-Veg allowed"
+            app:image="@drawable/male_visitor" />
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/aFemaleVisitor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:amenity_name="Govt ID proof needed"
+            app:image="@drawable/female_visitor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/parking"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check-in/out policy"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_help" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Check-in"/>
+
+                <TimePicker
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Check-out"/>
+
+                <TimePicker
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="General house rules"
+            android:textSize="20dp" />
+
+
+        <EditText
+            android:id="@+id/etOtherRestriciton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/border_allsides_black"
+            android:minLines="4"
+            android:padding="5dp"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+</ScrollView>

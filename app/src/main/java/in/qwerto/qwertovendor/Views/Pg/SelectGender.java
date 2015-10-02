@@ -1,9 +1,8 @@
-package in.qwerto.qwertovendor.Views;
+package in.qwerto.qwertovendor.Views.Pg;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 
@@ -27,7 +26,7 @@ public class SelectGender extends LinearLayout {
 
     private void initView() {
         LayoutInflater inflater = (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view=inflater.inflate(R.layout.view_open_gender, this, true);
+        View view=inflater.inflate(R.layout.view_pg_open_gender, this, true);
 
         maleRB = (RadioButton) findViewById(R.id.rbMale);
         femaleRB = (RadioButton) findViewById(R.id.rbFemale);

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/single_border_bottom"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/ivAmenityIcon"
+            android:layout_weight="1"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/tvAmenityName"
+            android:layout_toRightOf="@+id/ivAmenityIcon"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+        <TextView
+            android:layout_toLeftOf="@+id/rbNo"
+            android:id="@+id/rbYes"
+            android:text="Yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"/>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/rbNo"
+            android:text="No"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <in.qwerto.qwertovendor.Views.Amenity
+        android:id="@+id/aWaterSupply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:amenity_name="24hrs water supply"
+        app:image="@drawable/house_keeping"/>
+
+    <in.qwerto.qwertovendor.Views.Amenity
+        android:id="@+id/aPowerBackUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:amenity_name="Power backup"
+        app:image="@drawable/laundry"/>
+
+    <in.qwerto.qwertovendor.Views.Amenity
+        android:id="@+id/aSecurity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:amenity_name="24hrs Security"
+        app:image="@drawable/gym"/>
+
+    <in.qwerto.qwertovendor.Views.Amenity
+        android:id="@+id/aCarParking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:amenity_name="Car parking"
+        app:image="@drawable/parking"/>
+
+    <in.qwerto.qwertovendor.Views.Amenity
+        android:id="@+id/aLift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:amenity_name="Lift"
+        app:image="@drawable/water_purifier"/>
+
+    <in.qwerto.qwertovendor.Views.Amenity
+        android:id="@+id/aGym"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:amenity_name="Gym"
+        app:image="@drawable/washing_machine"/>
+
+    <in.qwerto.qwertovendor.Views.Amenity
+        android:id="@+id/aSwimmingPool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:amenity_name="Swimming pool"
+        app:image="@drawable/cctv"/>
+
+    <in.qwerto.qwertovendor.Views.Amenity
+        android:id="@+id/aGasSupply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:amenity_name="Common gas supply"
+        app:yes="true"
+        app:image="@drawable/tv"/>
+
+    <in.qwerto.qwertovendor.Views.Amenity
+        android:id="@+id/aPark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:amenity_name="Park"
+        app:image="@drawable/cooking_allowed"/>
+
+    <in.qwerto.qwertovendor.Views.Amenity
+        android:id="@+id/aCCTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:amenity_name="CCTV"
+        app:image="@drawable/wifi"/>
+
+
+</LinearLayout>
