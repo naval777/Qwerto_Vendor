@@ -8,6 +8,7 @@ import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 /**
  * Created by sandeep on 28/8/15.
@@ -21,7 +22,7 @@ public class SetText extends ActionBarActivity {
     //price = 4
 
     EditText content;
-    Button done;
+    TextView done;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -29,7 +30,7 @@ public class SetText extends ActionBarActivity {
         setContentView(R.layout.dialog_new_amenity);
 
         content = (EditText) findViewById(R.id.etContent);
-        done = (Button) findViewById(R.id.bDone);
+        done = (TextView) findViewById(R.id.tvDone);
 
         content.setText(getIntent().getStringExtra("text"));
         content.setSelection(content.getText().length());

@@ -2,6 +2,7 @@ package in.qwerto.qwertovendor.Activities;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -13,7 +14,7 @@ import in.qwerto.qwertovendor.R;
  */
 public class SplashScreen extends Activity implements View.OnClickListener {
 
-    TextView signIn, signUp;
+    TextView signIn, signUp, tvWelcome, tvMsg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,12 @@ public class SplashScreen extends Activity implements View.OnClickListener {
 
         signIn.setOnClickListener(this);
         signUp.setOnClickListener(this);
+
+        tvWelcome = (TextView) findViewById(R.id.tvWelcome);
+        tvMsg = (TextView) findViewById(R.id.tvMsg);
+        Typeface myTypeface = Typeface.createFromAsset(getAssets(), "fonts/quicksand_regular.ttf");
+        tvWelcome.setTypeface(myTypeface);
+        tvMsg.setTypeface(myTypeface);
     }
 
     @Override

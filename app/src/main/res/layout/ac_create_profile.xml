@@ -7,25 +7,25 @@
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
-        android:background="@android:color/black"
-        android:layout_width="fill_parent"
-        android:layout_height="48dp">
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
         <TextView
-            android:id="@+id/tvGoBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Back"
-            android:layout_marginLeft="10dp"
-            android:textColor="@android:color/white"/>
-        <TextView
-            android:id="@+id/tvTitle"
-            android:gravity="center"
+            android:layout_gravity="center"
             android:text="Sign Up"
-            android:textSize="20dp"
+            android:textColor="#FFFFFF"
             android:textStyle="bold"
-            android:textColor="@android:color/white"
-            android:layout_width="fill_parent"
-            android:layout_height="48dp" />
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Back"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
     </android.support.v7.widget.Toolbar>
 
 
@@ -40,91 +40,93 @@
         android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/pick_number"
-        android:padding="5dp">
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
         <LinearLayout
-            android:layout_margin="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:weightSum="10"
             android:background="@drawable/single_border_bottom"
             android:paddingBottom="10dp"
             android:gravity="center_vertical">
             <ImageView
-                android:layout_weight="7"
-                android:layout_width="@dimen/welcome_box"
-                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
                 android:src="@drawable/person"/>
             <EditText
-                android:layout_weight="3"
-                android:layout_width="match_parent"
+                android:layout_weight="5"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:background="@null"
                 android:hint="Enter name"
-                android:paddingLeft="10dp"/>
+                android:paddingLeft="20dp"/>
         </LinearLayout>
 
         <LinearLayout
-            android:layout_margin="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:weightSum="10"
             android:background="@drawable/single_border_bottom">
             <ImageView
-                android:layout_weight="7"
-                android:layout_width="@dimen/welcome_box"
+                android:layout_weight="1"
+                android:layout_width="0dp"
                 android:layout_height="48dp"
+                android:padding="5dp"
                 android:src="@drawable/email"/>
             <EditText
-                android:layout_weight="3"
-                android:layout_width="match_parent"
+                android:layout_weight="5"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:background="@null"
-                android:hint="Enter Email ID"
-                android:layout_margin="10dp"/>
+                android:paddingLeft="20dp"
+                android:hint="Enter Email ID" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_margin="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:weightSum="10"
-            android:background="@drawable/single_border_bottom"
-            android:paddingBottom="10dp">
+            android:background="@drawable/single_border_bottom">
             <ImageView
-                android:layout_weight="7"
-                android:layout_width="@dimen/welcome_box"
+                android:layout_weight="1"
+                android:layout_width="0dp"
                 android:layout_height="48dp"
+                android:padding="5dp"
                 android:src="@drawable/key"/>
             <EditText
-                android:layout_weight="3"
-                android:layout_width="match_parent"
+                android:layout_weight="5"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:background="@null"
                 android:hint="Enter OTP"
-                android:layout_marginLeft="10dp"/>
+                android:paddingLeft="20dp" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_margin="16dp"
+            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="10">
+            android:orientation="horizontal">
             <ImageView
-                android:layout_weight="7"
-                android:layout_width="@dimen/welcome_box"
+                android:layout_weight="1"
+                android:layout_width="0dp"
                 android:layout_height="48dp"
+                android:padding="5dp"
                 android:src="@drawable/lock"/>
             <EditText
-                android:layout_weight="3"
-                android:layout_width="match_parent"
+                android:layout_weight="5"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:background="@null"
                 android:hint="Enter Password"
-                android:layout_marginLeft="10dp"/>
+                android:paddingLeft="20dp"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -136,7 +138,7 @@
         android:layout_height="wrap_content"
         android:text="Create account"
         android:textColor="@android:color/white"
-        android:textSize="25dp"
+        android:textSize="20sp"
         android:background="@drawable/button"
         android:layout_marginRight="60dp"
         android:layout_marginBottom="10dp"
@@ -144,8 +146,7 @@
         android:paddingTop="10dp"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:elevation="10dp"/>
+        android:gravity="center" />
 
 
     <TextView

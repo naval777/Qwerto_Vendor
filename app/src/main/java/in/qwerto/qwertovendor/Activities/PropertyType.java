@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.TableRow;
 
 import in.qwerto.qwertovendor.R;
@@ -13,17 +14,17 @@ import in.qwerto.qwertovendor.R;
  */
 public class PropertyType extends Activity implements View.OnClickListener{
 
-    TableRow pg,apartment,hotels,hs;
+    RelativeLayout pg,apartment,hotels,hs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ac_property_type);
 
-        pg = (TableRow) findViewById(R.id.trpghostel);
-        apartment = (TableRow) findViewById(R.id.trapartment);
-        hotels = (TableRow) findViewById(R.id.trHotels);
-        hs = (TableRow) findViewById(R.id.trHomeStays);
+        pg = (RelativeLayout) findViewById(R.id.trpghostel);
+        apartment = (RelativeLayout) findViewById(R.id.trapartment);
+        hotels = (RelativeLayout) findViewById(R.id.trHotels);
+        hs = (RelativeLayout) findViewById(R.id.trHomeStays);
 
         pg.setOnClickListener(this);
         apartment.setOnClickListener(this);

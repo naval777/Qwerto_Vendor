@@ -2,39 +2,39 @@
 <items version="2" >
 
     <item
-        jar="/home/sandeep/android-sdks/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
-        <dex dex="/home/sandeep/Desktop/Qwerto_Vendor/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-9d66f16812fde19bb04b59ca811c29513efc091d.jar" />
-    </item>
-    <item
-        jar="/home/sandeep/Desktop/Qwerto_Vendor/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.0/classes.jar"
+        jar="/home/adarsh/Documents/Github/Qwerto_Vendor/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="5b37cf49773f7f17aca9830efd3053b0cac56728">
-        <dex dex="/home/sandeep/Desktop/Qwerto_Vendor/app/build/intermediates/pre-dexed/debug/classes-6cea1ac4d938e9521aec616f6372046364334966.jar" />
+        <dex dex="/home/adarsh/Documents/Github/Qwerto_Vendor/app/build/intermediates/pre-dexed/debug/classes-55f430c066d0bc76f2a481b72d32844bc3827517.jar" />
     </item>
     <item
-        jar="/home/sandeep/Desktop/Qwerto_Vendor/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
-        <dex dex="/home/sandeep/Desktop/Qwerto_Vendor/app/build/intermediates/pre-dexed/debug/classes-991e8f46effbdb8008104d3e8ad4b03c3058924b.jar" />
-    </item>
-    <item
-        jar="/home/sandeep/Desktop/Qwerto_Vendor/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
-        <dex dex="/home/sandeep/Desktop/Qwerto_Vendor/app/build/intermediates/pre-dexed/debug/classes-1b1aa1390c1c7dd6093094a6e51680335263cd96.jar" />
-    </item>
-    <item
-        jar="/home/sandeep/Desktop/Qwerto_Vendor/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/libs/internal_impl-22.2.0.jar"
+        jar="/home/adarsh/Documents/Github/Qwerto_Vendor/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/libs/internal_impl-22.2.0.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
-        <dex dex="/home/sandeep/Desktop/Qwerto_Vendor/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-463d2ea4299b080d39be47b3045695ce28ea06d5.jar" />
+        <dex dex="/home/adarsh/Documents/Github/Qwerto_Vendor/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-0cb2eec09f9299b57f42ee5639d4d2f6d4251039.jar" />
+    </item>
+    <item
+        jar="/home/adarsh/Documents/Github/Qwerto_Vendor/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="/home/adarsh/Documents/Github/Qwerto_Vendor/app/build/intermediates/pre-dexed/debug/classes-571087bbea0212d8818c8ce7d9c6c50f515ca84d.jar" />
+    </item>
+    <item
+        jar="/home/adarsh/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="/home/adarsh/Documents/Github/Qwerto_Vendor/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-11b0b8346b797d0d62956eb3342f115d76e12a72.jar" />
+    </item>
+    <item
+        jar="/home/adarsh/Documents/Github/Qwerto_Vendor/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="/home/adarsh/Documents/Github/Qwerto_Vendor/app/build/intermediates/pre-dexed/debug/classes-46d806fcef9ad74632010be95f7863cf0f7cc2b2.jar" />
     </item>
 
 </items>
