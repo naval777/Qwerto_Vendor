@@ -26,7 +26,7 @@ public class SelectGender extends LinearLayout {
 
     private void initView() {
         LayoutInflater inflater = (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view=inflater.inflate(R.layout.view_pg_open_gender, this, true);
+        inflater.inflate(R.layout.view_pg_open_gender, this, true);
 
         maleRB = (RadioButton) findViewById(R.id.rbMale);
         femaleRB = (RadioButton) findViewById(R.id.rbFemale);

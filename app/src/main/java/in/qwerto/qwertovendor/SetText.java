@@ -26,7 +26,7 @@ public class SetText extends ActionBarActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ac_set_text);
+        setContentView(R.layout.dialog_new_amenity);
 
         content = (EditText) findViewById(R.id.etContent);
         done = (Button) findViewById(R.id.bDone);

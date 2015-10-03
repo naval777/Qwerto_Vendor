@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/single_border_bottom"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/ivAmenityIcon"
+                android:layout_weight="1"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:id="@+id/tvAmenityName"
+                android:layout_toRightOf="@+id/ivAmenityIcon"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+            <TextView
+                android:layout_toLeftOf="@+id/rbNo"
+                android:id="@+id/rbYes"
+                android:text="Yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"/>
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/rbNo"
+                android:text="No"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amRoomCleaning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:image="@drawable/parking"
+            app:amenity_name="Room cleaning everyday"/>
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amToiletries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:image="@drawable/parking"
+            app:amenity_name="Toiletries"/>
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amBedCovers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:image="@drawable/parking"
+            app:amenity_name="Clean Bedcovers everyday"/>
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amWiFi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:amenity_name="Wifi"
+            app:image="@drawable/wifi"/>
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amCCTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:amenity_name="CCTV"
+            app:image="@drawable/cctv"/>
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amCloakRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:amenity_name="Cloak room"/>
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amCardsAccepted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:amenity_name="Cards accepted"/>
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amSwimmingPool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:amenity_name="Swimming pool"/>
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amCarParking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:amenity_name="Car Parking"/>
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amLift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:amenity_name="Lift"/>
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amTelephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:amenity_name="Telephone"/>
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amSecurity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:amenity_name="Security"/>
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amFreshTowels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:amenity_name="Fresh Towels everyday"/>
+
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amPowerBackUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:amenity_name="Power back-up"/>
+
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amRoomService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:amenity_name="Room service"/>
+
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amLaundry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:amenity_name="Laundry service"/>
+
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amSpa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:amenity_name="Spa \u0026 massage"/>
+
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amTravelDesk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:amenity_name="Travel desk"/>
+
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amFrontDesk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:amenity_name="24hr front desk"/>
+
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amConferenceHall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:amenity_name="Conference hall"/>
+
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:amenity_name="Bar"/>
+
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amPartyHall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:amenity_name="Party hall"/>
+
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amPlayGround"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:amenity_name="Play ground"/>
+
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/idSportsFacilities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:amenity_name="Sports faclities"/>
+
+
+        <in.qwerto.qwertovendor.Views.Amenity
+            android:id="@+id/amGym"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:amenity_name="Gym"/>
+
+    </LinearLayout>
+
+</ScrollView>

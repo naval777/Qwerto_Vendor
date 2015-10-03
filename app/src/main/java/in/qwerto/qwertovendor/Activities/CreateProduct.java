@@ -75,36 +75,36 @@ public class CreateProduct extends ActionBarActivity implements View.OnClickList
                 startActivityForResult(image, 5);
                 break;
             case R.id.llTitle:
-                Intent title = new Intent(CreateProduct.this, SetText.class);
-                title.putExtra("type",1);
-                if(tex.getVisibility()==View.INVISIBLE){
-                    title.putExtra("text",this.title.getText().toString());
-                }
-                startActivityForResult(title,1);
+//                Intent title = new Intent(CreateProduct.this, SetText.class);
+//                title.putExtra("type",1);
+//                if(tex.getVisibility()==View.INVISIBLE){
+//                    title.putExtra("text",this.title.getText().toString());
+//                }
+//                startActivityForResult(title,1);
                 break;
             case R.id.llCategory:
-                Intent cat = new Intent(CreateProduct.this, SetText.class);
-                cat.putExtra("type",2);
-                if(cex.getVisibility()==View.INVISIBLE){
-                    cat.putExtra("text", this.category.getText().toString());
-                }
-                startActivityForResult(cat, 2);
+//                Intent cat = new Intent(CreateProduct.this, SetText.class);
+//                cat.putExtra("type",2);
+//                if(cex.getVisibility()==View.INVISIBLE){
+//                    cat.putExtra("text", this.category.getText().toString());
+//                }
+//                startActivityForResult(cat, 2);
                 break;
-            case R.id.llDescription:
-                Intent des = new Intent(CreateProduct.this, SetText.class);
-                des.putExtra("type", 3);
-                if(dex.getVisibility()==View.INVISIBLE){
-                    des.putExtra("text", this.description.getText().toString());
-                }
-                startActivityForResult(des,3);
-                break;
+//            case R.id.llDescription:
+//                Intent des = new Intent(CreateProduct.this, SetText.class);
+//                des.putExtra("type", 3);
+//                if(dex.getVisibility()==View.INVISIBLE){
+//                    des.putExtra("text", this.description.getText().toString());
+//                }
+//                startActivityForResult(des,3);
+//                break;
             case R.id.llPrice:
-                Intent pri = new Intent(CreateProduct.this, SetText.class);
-                pri.putExtra("type",4);
-                if(pex.getVisibility()==View.INVISIBLE){
-                    pri.putExtra("text", this.price.getText().toString());
-                }
-                startActivityForResult(pri,4);
+//                Intent pri = new Intent(CreateProduct.this, SetText.class);
+//                pri.putExtra("type",4);
+//                if(pex.getVisibility()==View.INVISIBLE){
+//                    pri.putExtra("text", this.price.getText().toString());
+//                }
+//                startActivityForResult(pri,4);
                 break;
         }
     }

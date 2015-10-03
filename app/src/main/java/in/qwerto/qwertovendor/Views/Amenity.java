@@ -17,31 +17,57 @@ import in.qwerto.qwertovendor.R;
  */
 public class Amenity extends LinearLayout {
 
-    Context c;
-    RadioButton yes,no;
+    Context context;
+    RadioButton yes, no;
     boolean yesOrNo;
+    String name;
+    int image_id;
 
 
     public Amenity(Context context) {
         super(context);
-        this.c=context;
+        this.context = context;
+    }
+
+    public Amenity(Context context, String name){
+        super(context);
+        this.context = context;
+        this.name = name;
+        image_id=0;
     }
 
     public Amenity(Context context, AttributeSet attrs) {
         super(context, attrs);
 
-        c=context;
+        this.context = context;
 
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.Amenity,0,0);
-        String name = a.getString(R.styleable.Amenity_amenity_name);
-        int image_id = a.getResourceId(R.styleable.Amenity_image, 0);
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.Amenity, 0, 0);
+        name = a.getString(R.styleable.Amenity_amenity_name);
+        image_id = a.getResourceId(R.styleable.Amenity_image, 0);
 //        yesOrNo = a.getBoolean(R.styleable.Amenity_yes,true);
 
 
+        a.recycle();
+    }
 
+    public boolean getChecked() {
+        return yesOrNo;
+    }
+
+    public void setChecked(boolean b) {
+        if (b) {
+            yes.setChecked(true);
+            no.setChecked(false);
+        } else {
+            yes.setChecked(false);
+            no.setChecked(true);
+        }
+    }
+
+    private void initView() {
         LayoutInflater inflater = (LayoutInflater) context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        inflater.inflate(R.layout.view_single_amenity,this,true);
+        inflater.inflate(R.layout.view_single_amenity, this, true);
 
         TextView amenity = (TextView) findViewById(R.id.tvAmenityName);
         ImageView icon = (ImageView) findViewById(R.id.ivAmenityIcon);
@@ -63,12 +89,12 @@ public class Amenity extends LinearLayout {
         yes.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if(b){
+                if (b) {
                     no.setChecked(false);
-                    yesOrNo=true;
-                }else{
+                    yesOrNo = true;
+                } else {
                     no.setChecked(true);
-                    yesOrNo=false;
+                    yesOrNo = false;
                 }
             }
         });
@@ -76,31 +102,16 @@ public class Amenity extends LinearLayout {
         no.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if(b){
+                if (b) {
                     yes.setChecked(false);
-                    yesOrNo=false;
-                }else {
+                    yesOrNo = false;
+                } else {
                     yes.setChecked(true);
-                    yesOrNo=true;
+                    yesOrNo = true;
                 }
             }
         });
 
-        a.recycle();
-    }
-
-    public boolean getChecked(){
-        return yesOrNo;
-    }
-
-    public void setChecked(boolean b){
-        if(b){
-            yes.setChecked(true);
-            no.setChecked(false);
-        }else{
-            yes.setChecked(false);
-            no.setChecked(true);
-        }
     }
 
 }

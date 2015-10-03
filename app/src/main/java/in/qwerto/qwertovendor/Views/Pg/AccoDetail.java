@@ -13,15 +13,14 @@ import in.qwerto.qwertovendor.Views.Apartment.FlatAmenities;
 import in.qwerto.qwertovendor.Views.Apartment.RentDetails;
 import in.qwerto.qwertovendor.Views.Apartment.SelectTenants;
 import in.qwerto.qwertovendor.Views.Apartment.SocietyAmenities;
+import in.qwerto.qwertovendor.Views.Hotel.SingleRoom;
 
 /**
  * Created by sandeep on 17/9/15.
  */
 public class AccoDetail extends LinearLayout {
 
-    Context c;
-    boolean isOpened;
-    int openView;
+    Context context;
     SelectGender sg;
     SecurityDeposit sd;
     RoomDetails rd;
@@ -36,24 +35,79 @@ public class AccoDetail extends LinearLayout {
     LinearLayout accoDetail;
     ImageView open;
 
+    String name;
+    int image_id,openView,type;
+    boolean isOpened;
 
     public AccoDetail(Context context) {
         super(context);
-        this.c = context;
+        this.context = context;
+    }
+
+    public AccoDetail(Context context,String name, int image_id,boolean isOpened, int type){
+        super(context);
+        this.context = context;
+        this.name = name;
+        this.image_id = image_id;
+        this.isOpened = isOpened;
+        this.openView = openView;
+        this.type = type;
+
+        initView();
     }
 
     public AccoDetail(Context context, AttributeSet attrs) {
         super(context, attrs);
 
-        c = context;
+        this.context = context;
 
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.AccoDetail, 0, 0);
-        String name = a.getString(R.styleable.AccoDetail_detailName);
-        int image_id = a.getResourceId(R.styleable.AccoDetail_detail_icon, 0);
+        name = a.getString(R.styleable.AccoDetail_detailName);
+        image_id = a.getResourceId(R.styleable.AccoDetail_detail_icon, 0);
         isOpened = a.getBoolean(R.styleable.AccoDetail_isOpened, true);
         openView = a.getResourceId(R.styleable.AccoDetail_opened_view, 0);
-        int type = a.getInt(R.styleable.AccoDetail_type,0);
+        type = a.getInt(R.styleable.AccoDetail_type,0);
 
+        initView();
+
+        a.recycle();
+    }
+
+    public void getData(int type){
+        switch (type){
+            case 1:
+                sg.getData();
+                break;
+            case 2:
+                sd.getData();
+                break;
+            case 3:
+                rd.getData();
+                break;
+            case 4:
+                m.getData();
+                break;
+            case 5:
+                ame.getData();
+                break;
+            case 6:
+                r.getData();
+                break;
+        }
+    }
+
+    public void setOpened(boolean b){
+        isOpened = b;
+        if(b){
+            accoDetail.setVisibility(VISIBLE);
+            open.setImageResource(R.drawable.up_arrow);
+        }else{
+            accoDetail.setVisibility(GONE);
+            open.setImageResource(R.drawable.down_arrow);
+        }
+    }
+
+    private void initView(){
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.view_single_acco_detail, this, true);
 
@@ -120,61 +174,29 @@ public class AccoDetail extends LinearLayout {
                 accoDetail.addView(r,0);
                 break;
             case 7:
-                st = new SelectTenants(c);
+                st = new SelectTenants(context);
                 accoDetail.addView(st,0);
                 break;
             case 8:
-                rentDetails = new RentDetails(c);
+                rentDetails = new RentDetails(context);
                 accoDetail.addView(rentDetails,0);
                 break;
             case 9:
-                fa = new FlatAmenities(c);
+                fa = new FlatAmenities(context);
                 accoDetail.addView(fa,0);
                 break;
             case 10:
-                sa = new SocietyAmenities(c);
+                sa = new SocietyAmenities(context);
                 accoDetail.addView(sa,0);
                 break;
             case 11:
-                restrictions = new in.qwerto.qwertovendor.Views.Apartment.Restrictions(c);
+                restrictions = new in.qwerto.qwertovendor.Views.Apartment.Restrictions(context);
                 accoDetail.addView(restrictions,0);
                 break;
+            case 12:
+                SingleRoom singleRoom = new SingleRoom(context);
+                accoDetail.addView(singleRoom,0);
         }
 
-        a.recycle();
-    }
-
-    public void getData(int type){
-        switch (type){
-            case 1:
-                sg.getData();
-                break;
-            case 2:
-                sd.getData();
-                break;
-            case 3:
-                rd.getData();
-                break;
-            case 4:
-                m.getData();
-                break;
-            case 5:
-                ame.getData();
-                break;
-            case 6:
-                r.getData();
-                break;
-        }
-    }
-
-    public void setOpened(boolean b){
-        isOpened = b;
-        if(b){
-            accoDetail.setVisibility(VISIBLE);
-            open.setImageResource(R.drawable.up_arrow);
-        }else{
-            accoDetail.setVisibility(GONE);
-            open.setImageResource(R.drawable.down_arrow);
-        }
     }
 }

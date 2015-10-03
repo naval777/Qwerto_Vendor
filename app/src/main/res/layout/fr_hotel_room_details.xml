@@ -17,24 +17,28 @@
         android:orientation="horizontal">
 
         <ImageView
+            android:id="@+id/ivOne"
             android:layout_margin="10dp"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:src="@drawable/one" />
 
         <ImageView
+            android:id="@+id/ivTwo"
             android:layout_margin="10dp"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:src="@drawable/two" />
 
         <ImageView
+            android:id="@+id/ivThree"
             android:layout_margin="10dp"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:src="@drawable/three" />
 
         <ImageView
+            android:id="@+id/ivFour"
             android:layout_margin="10dp"
             android:layout_width="25dp"
             android:layout_height="25dp"

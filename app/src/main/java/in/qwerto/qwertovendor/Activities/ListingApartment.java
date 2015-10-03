@@ -95,16 +95,6 @@ public class ListingApartment extends Activity {
         currentDetail=1;
     }
 
-    private void displayVerifStatus(){
-        VerificationStatus vs = new VerificationStatus();
-        FragmentTransaction trans2 = getFragmentManager().beginTransaction();
-        trans2.replace(R.id.fragment, vs);
-        trans2.addToBackStack(null);
-        trans2.commit();
-        currentDetail=6;
-        next.setVisibility(View.GONE);
-    }
-
     private void displayBluePrint(){
         BluePrint bp = new BluePrint();
         FragmentTransaction trans2 = getFragmentManager().beginTransaction();
@@ -124,15 +114,6 @@ public class ListingApartment extends Activity {
         currentDetail=3;
     }
 
-    private void displayPayment(){
-        Payment pay = new Payment();
-        FragmentTransaction trans2 = getFragmentManager().beginTransaction();
-        trans2.replace(R.id.fragment, pay);
-        trans2.addToBackStack(null);
-        trans2.commit();
-        currentDetail=5;
-    }
-
     private void displayImagDets(){
         Images images = new Images();
         FragmentTransaction trans2 = getFragmentManager().beginTransaction();
@@ -140,6 +121,26 @@ public class ListingApartment extends Activity {
         trans2.addToBackStack(null);
         trans2.commit();
         currentDetail=4;
+    }
+
+    private void displayPayment(){
+        Payment pay = new Payment();
+        FragmentTransaction trans2 = getFragmentManager().beginTransaction();
+        trans2.replace(R.id.fragment, pay);
+        trans2.addToBackStack(null);
+        trans2.commit();
+        currentDetail=5;
+        next.setVisibility(View.VISIBLE);
+    }
+
+    private void displayVerifStatus(){
+        VerificationStatus vs = new VerificationStatus();
+        FragmentTransaction trans2 = getFragmentManager().beginTransaction();
+        trans2.replace(R.id.fragment, vs);
+        trans2.addToBackStack(null);
+        trans2.commit();
+        currentDetail=6;
+        next.setVisibility(View.GONE);
     }
 
 }
