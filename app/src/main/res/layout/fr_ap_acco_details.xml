@@ -52,7 +52,7 @@
             android:id="@+id/adFlatAmenities"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:detail_icon="@drawable/meals"
+            app:detail_icon="@drawable/flat_amenities"
             app:detailName="Flat amenities"
             app:opened_view="@layout/view_ap_open_flat_amenities"
             app:isOpened="false"
@@ -64,7 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:detailName="Society amenities"
-            app:detail_icon="@drawable/amenities"
+            app:detail_icon="@drawable/society_amenities"
             app:opened_view="@layout/view_ap_open_soc_amenity"
             app:isOpened="false"
             app:type="10"/>

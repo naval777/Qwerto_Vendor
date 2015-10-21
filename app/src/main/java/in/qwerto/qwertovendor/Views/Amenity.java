@@ -11,6 +11,11 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 
 import in.qwerto.qwertovendor.R;
+import in.qwerto.qwertovendor.Views.Apartment.FlatAmenities;
+import in.qwerto.qwertovendor.Views.Apartment.RentDetails;
+import in.qwerto.qwertovendor.Views.Apartment.SelectTenants;
+import in.qwerto.qwertovendor.Views.Apartment.SocietyAmenities;
+import in.qwerto.qwertovendor.Views.Hotel.SingleRoom;
 
 /**
  * Created by sandeep on 17/9/15.
@@ -23,10 +28,10 @@ public class Amenity extends LinearLayout {
     String name;
     int image_id;
 
-
     public Amenity(Context context) {
         super(context);
         this.context = context;
+        //initView();
     }
 
     public Amenity(Context context, String name){
@@ -34,6 +39,8 @@ public class Amenity extends LinearLayout {
         this.context = context;
         this.name = name;
         image_id=0;
+
+        initView();
     }
 
     public Amenity(Context context, AttributeSet attrs) {
@@ -44,8 +51,8 @@ public class Amenity extends LinearLayout {
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.Amenity, 0, 0);
         name = a.getString(R.styleable.Amenity_amenity_name);
         image_id = a.getResourceId(R.styleable.Amenity_image, 0);
-//        yesOrNo = a.getBoolean(R.styleable.Amenity_yes,true);
 
+        initView();
 
         a.recycle();
     }
@@ -113,5 +120,4 @@ public class Amenity extends LinearLayout {
         });
 
     }
-
 }

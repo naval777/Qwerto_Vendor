@@ -5,124 +5,165 @@
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:scrollbars="none">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center"
             android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp">
+                <LinearLayout
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/property_details"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:text="Property Details"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/roomwise_details"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:text="Accomodation Details"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/images"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:text="Images"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/payment"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:text="Payment"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/done"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:text="Done"/>
+
+                </LinearLayout>
+            </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="5dp">
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="5dp">
                 <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/circularcurrent"
-                    android:background="@drawable/circularback"
-                    android:padding="2dp"
-                    android:layout_marginLeft="32dp"/>
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:id="@+id/stage1"
+                    android:src="@drawable/circularcurrentdark"
+                    android:layout_marginLeft="29dp"/>
                 <ImageView
-                    android:layout_width="64dp"
+                    android:layout_width="58dp"
                     android:layout_height="1dp"
                     android:background="#66000000"
                     android:layout_gravity="center"/>
                 <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:id="@+id/stage2"
                     android:src="@drawable/circularback" />
                 <ImageView
-                    android:layout_width="64dp"
+                    android:layout_width="58dp"
                     android:layout_height="1dp"
                     android:background="#66000000"
                     android:layout_gravity="center"/>
                 <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:id="@+id/stage3"
                     android:src="@drawable/circularback" />
                 <ImageView
-                    android:layout_width="64dp"
+                    android:layout_width="58dp"
                     android:layout_height="1dp"
                     android:background="#66000000"
                     android:layout_gravity="center"/>
                 <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:id="@+id/stage4"
+                    android:src="@drawable/circularback" />
+                <ImageView
+                    android:layout_width="58dp"
+                    android:layout_height="1dp"
+                    android:background="#66000000"
+                    android:layout_gravity="center"/>
+                <ImageView
+                    android:layout_width="14dp"
+                    android:id="@+id/stage5"
+                    android:layout_height="14dp"
                     android:src="@drawable/circularback" />
             </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:orientation="horizontal"
-            android:layout_marginTop="5dp">
-            <LinearLayout
-                android:layout_width="84dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textSize="12sp"
-                    android:gravity="center"
-                    android:text="Property Details"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="84dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textSize="12sp"
-                    android:gravity="center"
-                    android:text="Accomodation Details"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="84dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textSize="12sp"
-                    android:gravity="center"
-                    android:text="Images and nearby"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="84dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textSize="12sp"
-                    android:gravity="center"
-                    android:text="Verification Details"/>
-
-            </LinearLayout>
-
-
-
-            </LinearLayout>
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:background="#88000000"
-                android:layout_marginTop="10dp"/>
         </LinearLayout>
     </HorizontalScrollView>
 </LinearLayout>

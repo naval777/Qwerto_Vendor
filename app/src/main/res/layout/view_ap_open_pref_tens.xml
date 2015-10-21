@@ -11,10 +11,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_centerHorizontal="true"
         android:layout_marginLeft="15dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/single_border_bottom"
+        android:layout_marginRight="15dp"
+        android:background="#FFFFFF"
         android:clickable="false"
         android:gravity="center"
         android:orientation="horizontal"
@@ -23,38 +22,34 @@
 
         <LinearLayout
             android:id="@+id/llBachelor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="2">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
             <RadioButton
                 android:id="@+id/rbBachelor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:button="@drawable/selector_radio"
-                android:clickable="false" />
+                android:clickable="true" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="3"
                 android:text="Bachelor(s)" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/llFamily"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="2">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
             <RadioButton
                 android:id="@+id/rbFamily"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
                 android:button="@drawable/selector_radio"
-                android:clickable="false" />
+                android:clickable="true" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -66,17 +61,16 @@
 
         <LinearLayout
             android:id="@+id/llBachelorette"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="2">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
             <RadioButton
                 android:id="@+id/rbBachelorette"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
                 android:button="@drawable/selector_radio"
-                android:clickable="false" />
+                android:clickable="true" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -89,11 +83,17 @@
     <EditText
         android:id="@+id/etRemarks"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:background="@drawable/single_border_bottom"
+        android:layout_height="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Subjective remarks, if any"
         android:textColor="@color/qwerto"
-        android:layout_marginLeft="10dp"/>
+        android:layout_marginLeft="30dp"
+        android:textSize="12sp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"/>
 </LinearLayout>

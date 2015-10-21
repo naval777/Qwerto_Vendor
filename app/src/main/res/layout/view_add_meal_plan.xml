@@ -10,8 +10,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:background="@drawable/single_border_bottom"
         android:gravity="center"
         android:paddingBottom="10dp">
@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
             android:text="General meal plan"
-            android:textSize="20dp"
+            android:textSize="18sp"
             android:textStyle="bold"
             android:background="@null"
             android:focusable="false"
@@ -42,12 +42,13 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
         android:text="Select the meal"
-        android:textSize="20dp" />
+        android:textSize="16sp" />
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/single_border_bottom">
+        android:background="@drawable/single_border_bottom"
+        android:layout_marginTop="10dp">
 
         <TableRow>
 
@@ -127,7 +128,7 @@
 
         <ImageView
             android:layout_width="20dp"
-            android:layout_height="25dp"
+            android:layout_height="20dp"
             android:layout_marginLeft="10dp"
             android:src="@drawable/rupee" />
 
@@ -136,7 +137,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:text="Cost for this plan"
-            android:textSize="20dp" />
+            android:textSize="16sp" />
 
     </LinearLayout>
 
@@ -145,7 +146,9 @@
         android:layout_height="wrap_content">
 
         <TableRow
-            android:id="@+id/rowIncluded">
+            android:id="@+id/rowIncluded"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp">
 
             <RadioButton
                 android:button="@drawable/selector_radio"
@@ -161,7 +164,8 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/rowExtra">
+            android:id="@+id/rowExtra"
+            android:layout_marginLeft="15dp">
 
             <RadioButton
                 android:button="@drawable/selector_radio"
@@ -178,7 +182,8 @@
                 android:id="@+id/etMealsExtra"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:textSize="14sp"
+                android:layout_marginLeft="25dp"
                 android:background="@drawable/single_border_bottom"
                 android:hint="Enter cost per month" />
         </TableRow>
@@ -192,26 +197,30 @@
         <ImageView
             android:layout_width="20dp"
             android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
             android:src="@drawable/edit_qwerto" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="Description about this plan"
-            android:textSize="20dp" />
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"/>
     </LinearLayout>
 
     <EditText
         android:id="@+id/etPlanDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:background="@drawable/border_allsides_black"
         android:minLines="5" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:gravity="right">
 
         <TextView
@@ -220,7 +229,7 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="30dp"
             android:text="Cancel"
-            android:textSize="20dp" />
+            android:textSize="16sp" />
 
 
         <TextView
@@ -229,11 +238,11 @@
             android:layout_height="wrap_content"
             android:background="@color/qwerto"
             android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
             android:paddingTop="5dp"
             android:text="Done"
             android:textColor="@android:color/white"
-            android:textSize="20dp" />
+            android:textSize="16sp" />
     </LinearLayout>
 </LinearLayout>

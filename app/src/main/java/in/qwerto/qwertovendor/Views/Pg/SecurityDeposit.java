@@ -1,6 +1,7 @@
 package in.qwerto.qwertovendor.Views.Pg;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
@@ -69,11 +70,11 @@ public class SecurityDeposit extends LinearLayout implements View.OnClickListene
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.llRefundable:
-                ref.setBackgroundResource(R.color.qwerto);
+                ref.setBackgroundResource(Color.parseColor("#FC9191"));
                 nonref.setBackground(null);
                 break;
             case R.id.llNonRefundable:
-                nonref.setBackgroundResource(R.color.qwerto);
+                ref.setBackgroundResource(Color.parseColor("#FC9191"));
                 ref.setBackground(null);
                 break;
             case R.id.ll1month:

@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_centerHorizontal="true"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
     android:background="@drawable/single_border_bottom"
     android:gravity="center"
     android:orientation="vertical"
@@ -22,7 +22,7 @@
         android:padding="5dp">
 
         <LinearLayout
-            android:background="@color/qwerto"
+            android:background="#99D55A5A"
             android:id="@+id/llRefundable"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -31,12 +31,14 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
                 android:src="@drawable/refundable" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
                 android:text="Refundable" />
         </LinearLayout>
 
@@ -44,17 +46,18 @@
             android:id="@+id/llNonRefundable"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginLeft="10dp">
+            android:layout_weight="1">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
                 android:src="@drawable/refundable" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:layout_gravity="center_vertical"
                 android:text="Non-Refundable" />
         </LinearLayout>
@@ -83,6 +86,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:text="1 month" />
         </LinearLayout>
 
@@ -102,6 +106,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:text="2 months" />
         </LinearLayout>
 
@@ -121,6 +126,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:text="3 months" />
 
         </LinearLayout>
