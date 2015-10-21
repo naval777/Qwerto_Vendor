@@ -3,4 +3,26 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string-array name="city_arrays">
+        <item>Chennai</item>
+    </string-array>
+    <string-array name="state_arrays">
+        <item>Tamilnadu</item>
+    </string-array>
+    <string-array name="desig_arrays">
+        <item>Owner</item>
+        <item>Manager</item>
+    </string-array>
+    <string-array name="prop_arrays">
+        <item>Individual House</item>
+        <item>Gated Community</item>
+    </string-array>
+    <string-array name="furn_arrays">
+        <item>Not furnished</item>
+        <item>Semi furnished</item>
+        <item>Fully furnished</item>
+    </string-array>
+    <string name="city_prompt">City</string>
+    <string name="state_prompt">State</string>
+    <string name="desig_prompt">State</string>
 </resources>

@@ -100,10 +100,10 @@ public class AccoDetail extends LinearLayout {
         isOpened = b;
         if(b){
             accoDetail.setVisibility(VISIBLE);
-            open.setImageResource(R.drawable.up_arrow);
+            open.setImageResource(R.drawable.up_arrow_pink);
         }else{
             accoDetail.setVisibility(GONE);
-            open.setImageResource(R.drawable.down_arrow);
+            open.setImageResource(R.drawable.down_arrow_pink);
         }
     }
 
@@ -128,9 +128,9 @@ public class AccoDetail extends LinearLayout {
         }
 
         if(accoDetail.getVisibility()==GONE){
-            open.setImageResource(R.drawable.down_arrow);
+            open.setImageResource(R.drawable.down_arrow_pink);
         }else{
-            open.setImageResource(R.drawable.up_arrow);
+            open.setImageResource(R.drawable.up_arrow_pink);
         }
 
 //        view.setOnClickListener(new OnClickListener() {

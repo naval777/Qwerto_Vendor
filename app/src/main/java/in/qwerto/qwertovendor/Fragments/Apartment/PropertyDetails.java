@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
+import in.qwerto.qwertovendor.Activities.ListingApartment;
 import in.qwerto.qwertovendor.R;
 
 /**
@@ -14,7 +15,8 @@ import in.qwerto.qwertovendor.R;
  */
 public class PropertyDetails extends Fragment {
 
-    LinearLayout next;
+    public LinearLayout next,back;
+    public ListingApartment listingApartment;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

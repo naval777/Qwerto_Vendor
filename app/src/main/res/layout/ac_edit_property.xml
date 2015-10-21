@@ -4,34 +4,25 @@
     android:layout_height="match_parent">
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
-        android:layout_width="fill_parent"
-        android:layout_height="60dp"
-        android:background="@android:color/black"
-        android:elevation="10dp">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-
-            <TextView
-                android:id="@+id/tvBack"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
-                android:text="Back"
-                android:layout_marginLeft="5dp"/>
-
-
-            <TextView
-            android:layout_width="fill_parent"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
+            android:layout_gravity="center"
             android:text="Edit your Property"
-            android:textColor="@android:color/white"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-        </RelativeLayout>
-
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Back"
+            android:id="@+id/tvBack"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
     </android.support.v7.widget.Toolbar>
 
 
@@ -54,87 +45,133 @@
 
         </RelativeLayout>
 
-    <TableLayout
-        android:layout_marginTop="10dp"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TableRow
-            android:id="@+id/trPropDetails"
-            android:background="@drawable/single_border_bottom"
-            android:layout_margin="10dp">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/trPropDetails">
 
             <TextView
-                android:layout_weight="2"
-                android:layout_width="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Property details"
-                android:textSize="25dp"/>
+                android:text="Property Details"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:id="@+id/textView2" />
+
             <ImageView
-                android:layout_weight="1"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:src="@drawable/right_arrow"/>
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:src="@drawable/right_arrow"
+                android:layout_alignTop="@+id/textView2"
+                android:layout_alignRight="@+id/textView2"
+                android:layout_alignEnd="@+id/textView2" />
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#44000000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
 
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/trAccoDetails"
-            android:background="@drawable/single_border_bottom"
-            android:layout_margin="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/trAccoDetails">
 
             <TextView
-                android:layout_weight="2"
-                android:layout_width="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Accomodation details"
-                android:textSize="25dp"/>
+                android:text="Accomodation Details"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:id="@+id/textView3"
+                android:layout_alignParentTop="true" />
+
             <ImageView
-                android:layout_weight="1"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:src="@drawable/right_arrow"/>
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:src="@drawable/right_arrow"
+                android:layout_alignTop="@+id/textView3"
+                android:layout_alignRight="@+id/textView3"
+                android:layout_alignEnd="@+id/textView3" />
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#77000000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
 
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/trImages"
-            android:background="@drawable/single_border_bottom"
-            android:layout_margin="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/trImages">
 
             <TextView
-                android:layout_weight="2"
-                android:layout_width="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Images"
-                android:textSize="25dp"/>
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:id="@+id/textView4"
+                android:layout_alignParentTop="true" />
+
             <ImageView
-                android:layout_weight="1"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:src="@drawable/right_arrow"/>
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:src="@drawable/right_arrow"
+                android:layout_alignTop="@+id/textView4"
+                android:layout_alignRight="@+id/textView4"
+                android:layout_alignEnd="@+id/textView4" />
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#77000000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
 
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/trNearBy"
-            android:background="@drawable/single_border_bottom"
-            android:layout_margin="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/trNearBy">
 
             <TextView
-                android:layout_weight="2"
-                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="24dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Near-by "
-                android:textSize="25dp"/>
+                android:text="Near-by"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:id="@+id/textView5"
+                android:layout_alignParentTop="true" />
+
             <ImageView
-                android:layout_weight="1"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:src="@drawable/right_arrow"/>
-
-        </TableRow>
-
-    </TableLayout>
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:src="@drawable/right_arrow"
+                android:layout_alignTop="@+id/textView5"
+                android:layout_alignRight="@+id/textView5"
+                android:layout_alignEnd="@+id/textView5" />
+        </RelativeLayout>
+    </LinearLayout>
 
 </LinearLayout>

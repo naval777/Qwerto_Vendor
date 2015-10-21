@@ -8,36 +8,37 @@
     <LinearLayout
         android:id="@+id/llAccoDetailTitle"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_centerHorizontal="true"
+        android:layout_height="48dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/single_border_bottom"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/single_border_bottom_light"
         android:gravity="center"
         android:textStyle="bold"
         android:weightSum="7">
 
         <ImageView
             android:id="@+id/ivAccoDetailIcon"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="7dp"
+            android:layout_weight="1"
             android:src="@drawable/gender" />
 
         <TextView
             android:id="@+id/tvAccoDetailName"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_weight="5"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="6"
             android:text="Gender"
-            android:textSize="20dp" />
+            android:textSize="15sp"
+            android:textColor="#000000"/>
 
         <ImageView
             android:id="@+id/ivAccoDetailOpen"
             android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:src="@drawable/up_arrow" />
+            android:layout_height="16dp"
+            android:src="@drawable/up_arrow_pink" />
     </LinearLayout>
 
     <LinearLayout

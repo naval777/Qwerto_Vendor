@@ -3,52 +3,378 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tell us about your property!"
-        android:gravity="center"/>
-
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tell us about your property!"
+            android:textSize="30sp"
+            android:id="@+id/titleprop"
+            android:padding="20dp"
+            android:gravity="center"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Property is "/>
-
-        <EditText
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:background="@drawable/single_border_bottom"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=" Sq.ft in built area"/>
-
+            android:layout_margin="5dp"
+            android:text="Bed Rooms"
+            android:textColor="#000000"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:background="@drawable/border_prop_item">
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:text="-"
+                android:textSize="30sp"
+                android:textColor="@color/qwerto"
+                android:gravity="center"/>
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/qwerto"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textSize="24sp"
+                android:textColor="@color/qwerto"
+                android:gravity="center"/>
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/qwerto"/>
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:text="+"
+                android:textSize="30sp"
+                android:textColor="@color/qwerto"
+                android:gravity="center"/>
         </LinearLayout>
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Property is "/>
+            android:layout_margin="5dp"
+            android:text="Hall"
+            android:textColor="#000000"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:background="@drawable/border_prop_item">
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:text="-"
+                android:textSize="30sp"
+                android:textColor="@color/qwerto"
+                android:gravity="center"/>
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/qwerto"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textSize="24sp"
+                android:textColor="@color/qwerto"
+                android:gravity="center"/>
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/qwerto"/>
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:text="+"
+                android:textSize="30sp"
+                android:textColor="@color/qwerto"
+                android:gravity="center"/>
+        </LinearLayout>
 
-        <Spinner
+        <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Kitchen"
+            android:textColor="#000000"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:background="@drawable/border_prop_item">
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:text="-"
+                android:textSize="30sp"
+                android:textColor="@color/qwerto"
+                android:gravity="center"/>
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/qwerto"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textSize="24sp"
+                android:textColor="@color/qwerto"
+                android:gravity="center"/>
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/qwerto"/>
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:text="+"
+                android:textSize="30sp"
+                android:textColor="@color/qwerto"
+                android:gravity="center"/>
+        </LinearLayout>
 
-        </Spinner>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Dining Hall"
+            android:textColor="#000000"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:background="@drawable/border_prop_item">
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:text="-"
+                android:textSize="30sp"
+                android:textColor="@color/qwerto"
+                android:gravity="center"/>
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/qwerto"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textSize="24sp"
+                android:textColor="@color/qwerto"
+                android:gravity="center"/>
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/qwerto"/>
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:text="+"
+                android:textSize="30sp"
+                android:textColor="@color/qwerto"
+                android:gravity="center"/>
+        </LinearLayout>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Balcony"
+            android:textColor="#000000"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:background="@drawable/border_prop_item">
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:text="-"
+                android:textSize="30sp"
+                android:textColor="@color/qwerto"
+                android:gravity="center"/>
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/qwerto"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textSize="24sp"
+                android:textColor="@color/qwerto"
+                android:gravity="center"/>
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/qwerto"/>
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:text="+"
+                android:textSize="30sp"
+                android:textColor="@color/qwerto"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Bathrooms"
+            android:textColor="#000000"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:background="@drawable/border_prop_item">
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:text="-"
+                android:textSize="30sp"
+                android:textColor="@color/qwerto"
+                android:gravity="center"/>
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/qwerto"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textSize="24sp"
+                android:textColor="@color/qwerto"
+                android:gravity="center"/>
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/qwerto"/>
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:text="+"
+                android:textSize="30sp"
+                android:textColor="@color/qwerto"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="AC"
+            android:textColor="#000000"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:background="@drawable/border_prop_item">
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:text="-"
+                android:textSize="30sp"
+                android:textColor="@color/qwerto"
+                android:gravity="center"/>
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/qwerto"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textSize="24sp"
+                android:textColor="@color/qwerto"
+                android:gravity="center"/>
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/qwerto"/>
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:text="+"
+                android:textSize="30sp"
+                android:textColor="@color/qwerto"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Property is "/>
+
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@color/qwerto"
+                android:background="@drawable/single_border_bottom"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Sq.ft in built area"/>
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="14dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Property is "/>
+
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:entries="@array/furn_arrays"
+                android:prompt="@string/desig_prompt"
+                android:textColor="@color/qwerto"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bottom_border_qwerto"/>
+
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>

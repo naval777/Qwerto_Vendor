@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/circularcurrent"
+                    android:background="@drawable/circularback"
+                    android:padding="2dp"
+                    android:layout_marginLeft="32dp"/>
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="1dp"
+                    android:background="#66000000"
+                    android:layout_gravity="center"/>
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/circularback" />
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="1dp"
+                    android:background="#66000000"
+                    android:layout_gravity="center"/>
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/circularback" />
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="1dp"
+                    android:background="#66000000"
+                    android:layout_gravity="center"/>
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/circularback" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <LinearLayout
+                android:layout_width="84dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:text="Property Details"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="84dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:text="Accomodation Details"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="84dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:text="Images and nearby"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="84dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:text="Verification Details"/>
+
+            </LinearLayout>
+
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#88000000"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

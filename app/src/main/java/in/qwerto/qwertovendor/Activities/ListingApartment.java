@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import in.qwerto.qwertovendor.Fragments.Apartment.AccomodationDetails;
@@ -21,6 +22,7 @@ public class ListingApartment extends Activity {
 
     LinearLayout next, back;
     int currentDetail = 1;
+    ImageView[] statuscircles;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,16 @@ public class ListingApartment extends Activity {
 
         next = (LinearLayout) findViewById(R.id.llNext);
         back = (LinearLayout) findViewById(R.id.llBack);
+
+        statuscircles = new ImageView[]
+                {
+                        (ImageView) findViewById(R.id.stage1),
+                        (ImageView) findViewById(R.id.stage2),
+                        (ImageView) findViewById(R.id.stage3),
+                        (ImageView) findViewById(R.id.stage4),
+                        (ImageView) findViewById(R.id.stage5),
+                        (ImageView) findViewById(R.id.stage6),
+                };
 
         displayPropDets();
 
@@ -43,18 +55,58 @@ public class ListingApartment extends Activity {
                 switch (currentDetail) {
                     case 1:
                         displayBluePrint();
+                        for(int i=0;i<5;i++)
+                        {
+                            statuscircles[i].setImageResource(R.drawable.circularback);
+                        }
+                        statuscircles[0].setImageResource(R.drawable.circularcomplete);
+                        statuscircles[1].setImageResource(R.drawable.circularcurrentdark);
                         break;
                     case 2:
                         displayAccoDetails();
+                        for(int i=0;i<5;i++)
+                        {
+                            statuscircles[i].setImageResource(R.drawable.circularback);
+                        }
+                        statuscircles[0].setImageResource(R.drawable.circularcomplete);
+                        statuscircles[1].setImageResource(R.drawable.circularcomplete);
+                        statuscircles[2].setImageResource(R.drawable.circularcurrentdark);
                         break;
                     case 3:
                         displayImagDets();
+                        for(int i=0;i<5;i++)
+                        {
+                            statuscircles[i].setImageResource(R.drawable.circularback);
+                        }
+                        statuscircles[0].setImageResource(R.drawable.circularcomplete);
+                        statuscircles[1].setImageResource(R.drawable.circularcomplete);
+                        statuscircles[2].setImageResource(R.drawable.circularcomplete);
+                        statuscircles[3].setImageResource(R.drawable.circularcurrentdark);
                         break;
                     case 4:
                         displayPayment();
+                        for(int i=0;i<5;i++)
+                        {
+                            statuscircles[i].setImageResource(R.drawable.circularback);
+                        }
+                        statuscircles[0].setImageResource(R.drawable.circularcomplete);
+                        statuscircles[1].setImageResource(R.drawable.circularcomplete);
+                        statuscircles[2].setImageResource(R.drawable.circularcomplete);
+                        statuscircles[3].setImageResource(R.drawable.circularcomplete);
+                        statuscircles[4].setImageResource(R.drawable.circularcurrentdark);
                         break;
                     case 5:
                         displayVerifStatus();
+                        for(int i=0;i<5;i++)
+                        {
+                            statuscircles[i].setImageResource(R.drawable.circularback);
+                        }
+                        statuscircles[0].setImageResource(R.drawable.circularcomplete);
+                        statuscircles[1].setImageResource(R.drawable.circularcomplete);
+                        statuscircles[2].setImageResource(R.drawable.circularcomplete);
+                        statuscircles[3].setImageResource(R.drawable.circularcomplete);
+                        statuscircles[4].setImageResource(R.drawable.circularcomplete);
+                        statuscircles[5].setImageResource(R.drawable.circularcurrentdark);
                 }
 
             }
@@ -66,18 +118,53 @@ public class ListingApartment extends Activity {
                 switch (currentDetail) {
                     case 2:
                         displayPropDets();
+                        for(int i=0;i<5;i++)
+                        {
+                            statuscircles[i].setImageResource(R.drawable.circularback);
+                        }
+                        statuscircles[0].setImageResource(R.drawable.circularcurrentdark);
                         break;
                     case 3:
                         displayBluePrint();
+                        for(int i=0;i<5;i++)
+                        {
+                            statuscircles[i].setImageResource(R.drawable.circularback);
+                        }
+                        statuscircles[0].setImageResource(R.drawable.circularcomplete);
+                        statuscircles[1].setImageResource(R.drawable.circularcurrentdark);
                         break;
                     case 4:
                         displayAccoDetails();
+                        for(int i=0;i<5;i++)
+                        {
+                            statuscircles[i].setImageResource(R.drawable.circularback);
+                        }
+                        statuscircles[0].setImageResource(R.drawable.circularcomplete);
+                        statuscircles[1].setImageResource(R.drawable.circularcomplete);
+                        statuscircles[2].setImageResource(R.drawable.circularcurrentdark);
                         break;
                     case 5:
                         displayImagDets();
+                        for(int i=0;i<5;i++)
+                        {
+                            statuscircles[i].setImageResource(R.drawable.circularback);
+                        }
+                        statuscircles[0].setImageResource(R.drawable.circularcomplete);
+                        statuscircles[1].setImageResource(R.drawable.circularcomplete);
+                        statuscircles[2].setImageResource(R.drawable.circularcomplete);
+                        statuscircles[3].setImageResource(R.drawable.circularcurrentdark);
                         break;
                     case 6:
                         displayPayment();
+                        for(int i=0;i<5;i++)
+                        {
+                            statuscircles[i].setImageResource(R.drawable.circularback);
+                        }
+                        statuscircles[0].setImageResource(R.drawable.circularcomplete);
+                        statuscircles[1].setImageResource(R.drawable.circularcomplete);
+                        statuscircles[2].setImageResource(R.drawable.circularcomplete);
+                        statuscircles[3].setImageResource(R.drawable.circularcomplete);
+                        statuscircles[4].setImageResource(R.drawable.circularcurrentdark);
                         break;
                 }
             }

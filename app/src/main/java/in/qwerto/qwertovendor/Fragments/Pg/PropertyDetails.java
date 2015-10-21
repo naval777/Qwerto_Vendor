@@ -2,11 +2,14 @@ package in.qwerto.qwertovendor.Fragments.Pg;
 
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 
 import in.qwerto.qwertovendor.R;
 
@@ -16,6 +19,7 @@ import in.qwerto.qwertovendor.R;
 public class PropertyDetails extends Fragment {
 
     LinearLayout next;
+    private Spinner spinner1;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -41,6 +45,7 @@ public class PropertyDetails extends Fragment {
 //                trans.commit();
 //            }
 //        });
+        spinner1 = (Spinner) v.findViewById(R.id.spinner);
         return v;
     }
 }

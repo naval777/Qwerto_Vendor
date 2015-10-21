@@ -3,10 +3,14 @@ package in.qwerto.qwertovendor.Views.Pg;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
+import android.view.WindowManager;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -105,6 +109,13 @@ public class Meals extends LinearLayout implements View.OnClickListener {
             super(context);
             this.context = context;
             requestWindowFeature(Window.FEATURE_NO_TITLE);
+            WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
+            lp.copyFrom(getWindow().getAttributes());
+            lp.width = WindowManager.LayoutParams.MATCH_PARENT;
+            lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
+            lp.gravity= Gravity.CENTER_HORIZONTAL|Gravity.CENTER_VERTICAL;
+            getWindow().setAttributes(lp);
+            getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
             if (context instanceof Activity) {
                 setOwnerActivity((Activity) context);
             }

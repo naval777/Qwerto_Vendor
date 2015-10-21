@@ -4,14 +4,12 @@
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_below="@+id/toolbar"
-    android:layout_marginBottom="20dp"
     android:background="@android:color/white">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:id="@+id/llPropertyName"
@@ -29,7 +27,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Property name"
-                android:textSize="20dp" />
+                android:textColor="#CC000000"
+                android:textSize="16sp" />
         </LinearLayout>
 
 
@@ -38,23 +37,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/llPropertyName"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="5dp"
             android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:src="@drawable/property_name"
-                android:visibility="invisible" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="40dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="20dp"
                 android:background="@drawable/bottom_border_qwerto"
                 android:hint="Name"
                 android:padding="5dp"
-                android:textSize="20dp" />
+                android:textSize="16sp" />
         </LinearLayout>
 
 
@@ -63,21 +57,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/llName"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="20sp"
             android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="25dp"
+                android:layout_height="20dp"
                 android:src="@drawable/location" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="40dp"
-                android:padding="5dp"
                 android:text="Location"
-                android:textSize="20dp" />
+                android:layout_gravity="center"
+                android:textColor="#CC000000"
+                android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -90,16 +84,16 @@
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="25dp"
+                android:layout_height="20dp"
                 android:src="@drawable/address" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="40dp"
-                android:padding="5dp"
                 android:text="Address"
-                android:textSize="20dp" />
+                android:textColor="#CC000000"
+                android:layout_gravity="center"
+                android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -107,7 +101,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/llAddress"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="5dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -119,11 +113,11 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="40dp"
+                android:layout_marginRight="20dp"
                 android:background="@drawable/bottom_border_qwerto"
                 android:hint="Door no, street"
                 android:padding="5dp"
-                android:textSize="20dp" />
+                android:textSize="16sp" />
         </LinearLayout>
 
 
@@ -132,7 +126,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/llDoor"
-            android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -144,11 +137,11 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="40dp"
+                android:layout_marginRight="20dp"
                 android:background="@drawable/bottom_border_qwerto"
                 android:hint="Area"
                 android:padding="5dp"
-                android:textSize="20dp" />
+                android:textSize="16sp" />
         </LinearLayout>
 
 
@@ -157,7 +150,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/llArea"
-            android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -170,33 +162,40 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="5dp"
                 android:weightSum="3">
 
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:background="@drawable/bottom_border_qwerto"
-                    android:hint="City" />
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:entries="@array/city_arrays"
+                    android:prompt="@string/city_prompt"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bottom_border_qwerto"/>
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:entries="@array/state_arrays"
+                    android:prompt="@string/state_prompt"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bottom_border_qwerto"/>
 
                 <EditText
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bottom_border_qwerto"
-                    android:hint="State" />
-
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="20dp"
                     android:layout_weight="1"
                     android:background="@drawable/bottom_border_qwerto"
                     android:hint="Pincode"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textSize="16sp"/>
             </LinearLayout>
 
         </LinearLayout>
@@ -206,7 +205,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/llCity"
-            android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -218,11 +216,11 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="40dp"
+                android:layout_marginRight="20dp"
                 android:background="@drawable/bottom_border_qwerto"
                 android:hint="Landmark"
                 android:padding="5dp"
-                android:textSize="20dp" />
+                android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -235,7 +233,7 @@
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="25dp"
+                android:layout_height="20dp"
                 android:src="@drawable/add_contact" />
 
             <TextView
@@ -244,7 +242,8 @@
                 android:layout_marginRight="40dp"
                 android:padding="5dp"
                 android:text="Contact Details"
-                android:textSize="20dp" />
+                android:textColor="#CC000000"
+                android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -252,7 +251,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/llContact"
-            android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -269,26 +267,33 @@
                 android:weightSum="3">
 
                 <EditText
-                    android:layout_width="fill_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="5dp"
+                    android:textSize="16sp"
+                    android:padding="5dp"
                     android:layout_weight="1"
                     android:background="@drawable/bottom_border_qwerto"
                     android:hint="Name" />
 
-                <EditText
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
+                <Spinner
+                    android:id="@+id/spinner3"
+                    android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:background="@drawable/bottom_border_qwerto"
-                    android:hint="Designation" />
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:entries="@array/desig_arrays"
+                    android:prompt="@string/desig_prompt"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/bottom_border_qwerto"/>
 
                 <EditText
-                    android:layout_width="fill_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:padding="5dp"
                     android:background="@drawable/bottom_border_qwerto"
                     android:hint="Phone number"
                     android:inputType="number" />
@@ -301,12 +306,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/llContactDetails"
-            android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="25dp"
+                android:layout_height="20dp"
                 android:src="@drawable/add" />
 
             <TextView
@@ -315,7 +319,7 @@
                 android:layout_marginRight="40dp"
                 android:padding="5dp"
                 android:text="Add contact"
-                android:textSize="20dp" />
+                android:textSize="16sp" />
         </LinearLayout>
 
 
@@ -329,7 +333,7 @@
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="25dp"
+                android:layout_height="20dp"
                 android:src="@drawable/website" />
 
             <TextView
@@ -338,7 +342,8 @@
                 android:layout_marginRight="40dp"
                 android:padding="5dp"
                 android:text="Website"
-                android:textSize="20dp" />
+                android:textColor="#CC000000"
+                android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -346,7 +351,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/llWebsite"
-            android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -358,11 +362,11 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="40dp"
+                android:layout_marginRight="20dp"
                 android:background="@drawable/bottom_border_qwerto"
                 android:hint="www."
                 android:padding="5dp"
-                android:textSize="20dp" />
+                android:textSize="16sp" />
         </LinearLayout>
 
 
@@ -376,7 +380,7 @@
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="25dp"
+                android:layout_height="20dp"
                 android:src="@drawable/description" />
 
             <TextView
@@ -385,7 +389,8 @@
                 android:layout_marginRight="40dp"
                 android:padding="5dp"
                 android:text="Property description"
-                android:textSize="20dp" />
+                android:textColor="#CC000000"
+                android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -394,17 +399,17 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/llProperty"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="40dp"
+                android:layout_marginRight="20dp"
                 android:background="@drawable/border_allsides_black"
                 android:minLines="4"
                 android:padding="5dp"
                 android:textSize="20dp" />
         </LinearLayout>
+
     </LinearLayout>
 </ScrollView>

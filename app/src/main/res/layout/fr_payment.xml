@@ -7,11 +7,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Account information"
+        android:layout_margin="10dp"
+        android:textSize="16dp"
         android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:text="Type of account"/>
 
     <LinearLayout
@@ -69,7 +72,8 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="20dp">
 
-        <TableRow>
+        <TableRow
+            android:layout_margin="10dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -78,12 +82,16 @@
             <EditText
                 android:id="@+id/etACName"
                 android:layout_weight="1"
+                android:layout_marginLeft="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/single_border_bottom"/>
         </TableRow>
 
-        <TableRow>
+        <TableRow
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -92,11 +100,15 @@
             <EditText
                 android:id="@+id/etACNumber"
                 android:layout_weight="1"
+                android:layout_marginLeft="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/single_border_bottom"/>
         </TableRow>
-        <TableRow>
+        <TableRow
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -105,11 +117,15 @@
             <EditText
                 android:id="@+id/etBankName"
                 android:layout_weight="1"
+                android:layout_marginLeft="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/single_border_bottom"/>
         </TableRow>
-        <TableRow>
+        <TableRow
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -118,11 +134,15 @@
             <EditText
                 android:id="@+id/etBranchName"
                 android:layout_weight="1"
+                android:layout_marginLeft="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/single_border_bottom"/>
         </TableRow>
-        <TableRow>
+        <TableRow
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -131,6 +151,7 @@
             <EditText
                 android:id="@+id/etIFSCCode"
                 android:layout_weight="1"
+                android:layout_marginLeft="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/single_border_bottom"/>

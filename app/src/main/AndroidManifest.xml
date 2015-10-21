@@ -19,6 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Activities.ListingApartment"/>
+        <activity android:name=".Activities.ListingHotel"/>
+        <activity android:name=".Activities.ListingHS"/>
         <activity android:name=".Activities.ListingPG"/>
         <activity android:name=".Activities.PickNumber"/>
         <activity android:name=".Activities.CreateProfile"/>
